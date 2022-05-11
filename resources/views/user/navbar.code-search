@@ -1,0 +1,2084 @@
+# Query: navbar
+# ContextLines: 1
+
+Wyniki: 1689 - Pliki: 56
+
+public\admin\index.html:
+  171        <div class="container-fluid page-body-wrapper">
+  172:         <!-- partial:partials/_navbar.html -->
+  173:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  174:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  175:             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+  176            </div>
+  177:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  178:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  179                <span class="mdi mdi-menu"></span>
+  180              </button>
+  181:             <ul class="navbar-nav w-100">
+  182                <li class="nav-item w-100">
+
+  187              </ul>
+  188:             <ul class="navbar-nav navbar-nav-right">
+  189                <li class="nav-item dropdown d-none d-lg-block">
+  190                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  191:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  192                    <h6 class="p-3 mb-0">Projects</h6>
+
+  239                  </a>
+  240:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  241                    <h6 class="p-3 mb-0">Messages</h6>
+
+  280                  </a>
+  281:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  282                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  324                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  325:                   <div class="navbar-profile">
+  326                      <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
+  327:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  328                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  330                  </a>
+  331:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  332                    <h6 class="p-3 mb-0">Profile</h6>
+
+  359              </ul>
+  360:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  361                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\assets\css\style.css:
+  11137  
+  11138: .navbar {
+  11139    position: relative;
+
+  11144    padding: 0.5rem 1rem; }
+  11145:   .navbar .container,
+  11146:   .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
+  11147      display: flex;
+
+  11151  
+  11152: .navbar-brand {
+  11153    display: inline-block;
+
+  11159    white-space: nowrap; }
+  11160:   .navbar-brand:hover, .navbar-brand:focus {
+  11161      text-decoration: none; }
+  11162  
+  11163: .navbar-nav {
+  11164    display: flex;
+
+  11168    list-style: none; }
+  11169:   .navbar-nav .nav-link {
+  11170      padding-right: 0;
+  11171      padding-left: 0; }
+  11172:   .navbar-nav .dropdown-menu {
+  11173      position: static;
+
+  11175  
+  11176: .navbar-text {
+  11177    display: inline-block;
+
+  11180  
+  11181: .navbar-collapse {
+  11182    flex-basis: 100%;
+
+  11185  
+  11186: .navbar-toggler {
+  11187    padding: 0.25rem 0.75rem;
+
+  11192    border-radius: 0.25rem; }
+  11193:   .navbar-toggler:hover, .navbar-toggler:focus {
+  11194      text-decoration: none; }
+  11195  
+  11196: .navbar-toggler-icon {
+  11197    display: inline-block;
+
+  11205  @media (max-width: 575.98px) {
+  11206:   .navbar-expand-sm > .container,
+  11207:   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
+  11208      padding-right: 0;
+
+  11211  @media (min-width: 576px) {
+  11212:   .navbar-expand-sm {
+  11213      flex-flow: row nowrap;
+  11214      justify-content: flex-start; }
+  11215:     .navbar-expand-sm .navbar-nav {
+  11216        flex-direction: row; }
+  11217:       .navbar-expand-sm .navbar-nav .dropdown-menu {
+  11218          position: absolute; }
+  11219:       .navbar-expand-sm .navbar-nav .nav-link {
+  11220          padding-right: 0.5rem;
+  11221          padding-left: 0.5rem; }
+  11222:     .navbar-expand-sm > .container,
+  11223:     .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
+  11224        flex-wrap: nowrap; }
+  11225:     .navbar-expand-sm .navbar-collapse {
+  11226        display: flex !important;
+  11227        flex-basis: auto; }
+  11228:     .navbar-expand-sm .navbar-toggler {
+  11229        display: none; } }
+
+  11231  @media (max-width: 767.98px) {
+  11232:   .navbar-expand-md > .container,
+  11233:   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
+  11234      padding-right: 0;
+
+  11237  @media (min-width: 768px) {
+  11238:   .navbar-expand-md {
+  11239      flex-flow: row nowrap;
+  11240      justify-content: flex-start; }
+  11241:     .navbar-expand-md .navbar-nav {
+  11242        flex-direction: row; }
+  11243:       .navbar-expand-md .navbar-nav .dropdown-menu {
+  11244          position: absolute; }
+  11245:       .navbar-expand-md .navbar-nav .nav-link {
+  11246          padding-right: 0.5rem;
+  11247          padding-left: 0.5rem; }
+  11248:     .navbar-expand-md > .container,
+  11249:     .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
+  11250        flex-wrap: nowrap; }
+  11251:     .navbar-expand-md .navbar-collapse {
+  11252        display: flex !important;
+  11253        flex-basis: auto; }
+  11254:     .navbar-expand-md .navbar-toggler {
+  11255        display: none; } }
+
+  11257  @media (max-width: 991.98px) {
+  11258:   .navbar-expand-lg > .container,
+  11259:   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
+  11260      padding-right: 0;
+
+  11263  @media (min-width: 992px) {
+  11264:   .navbar-expand-lg {
+  11265      flex-flow: row nowrap;
+  11266      justify-content: flex-start; }
+  11267:     .navbar-expand-lg .navbar-nav {
+  11268        flex-direction: row; }
+  11269:       .navbar-expand-lg .navbar-nav .dropdown-menu {
+  11270          position: absolute; }
+  11271:       .navbar-expand-lg .navbar-nav .nav-link {
+  11272          padding-right: 0.5rem;
+  11273          padding-left: 0.5rem; }
+  11274:     .navbar-expand-lg > .container,
+  11275:     .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
+  11276        flex-wrap: nowrap; }
+  11277:     .navbar-expand-lg .navbar-collapse {
+  11278        display: flex !important;
+  11279        flex-basis: auto; }
+  11280:     .navbar-expand-lg .navbar-toggler {
+  11281        display: none; } }
+
+  11283  @media (max-width: 1199.98px) {
+  11284:   .navbar-expand-xl > .container,
+  11285:   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+  11286      padding-right: 0;
+
+  11289  @media (min-width: 1200px) {
+  11290:   .navbar-expand-xl {
+  11291      flex-flow: row nowrap;
+  11292      justify-content: flex-start; }
+  11293:     .navbar-expand-xl .navbar-nav {
+  11294        flex-direction: row; }
+  11295:       .navbar-expand-xl .navbar-nav .dropdown-menu {
+  11296          position: absolute; }
+  11297:       .navbar-expand-xl .navbar-nav .nav-link {
+  11298          padding-right: 0.5rem;
+  11299          padding-left: 0.5rem; }
+  11300:     .navbar-expand-xl > .container,
+  11301:     .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+  11302        flex-wrap: nowrap; }
+  11303:     .navbar-expand-xl .navbar-collapse {
+  11304        display: flex !important;
+  11305        flex-basis: auto; }
+  11306:     .navbar-expand-xl .navbar-toggler {
+  11307        display: none; } }
+  11308  
+  11309: .navbar-expand {
+  11310    flex-flow: row nowrap;
+  11311    justify-content: flex-start; }
+  11312:   .navbar-expand > .container,
+  11313:   .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
+  11314      padding-right: 0;
+  11315      padding-left: 0; }
+  11316:   .navbar-expand .navbar-nav {
+  11317      flex-direction: row; }
+  11318:     .navbar-expand .navbar-nav .dropdown-menu {
+  11319        position: absolute; }
+  11320:     .navbar-expand .navbar-nav .nav-link {
+  11321        padding-right: 0.5rem;
+  11322        padding-left: 0.5rem; }
+  11323:   .navbar-expand > .container,
+  11324:   .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
+  11325      flex-wrap: nowrap; }
+  11326:   .navbar-expand .navbar-collapse {
+  11327      display: flex !important;
+  11328      flex-basis: auto; }
+  11329:   .navbar-expand .navbar-toggler {
+  11330      display: none; }
+  11331  
+  11332: .navbar-light .navbar-brand {
+  11333    color: rgba(0, 0, 0, 0.9); }
+  11334:   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+  11335      color: rgba(0, 0, 0, 0.9); }
+  11336  
+  11337: .navbar-light .navbar-nav .nav-link {
+  11338    color: rgba(0, 0, 0, 0.5); }
+  11339:   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  11340      color: rgba(0, 0, 0, 0.7); }
+  11341:   .navbar-light .navbar-nav .nav-link.disabled {
+  11342      color: rgba(0, 0, 0, 0.3); }
+  11343  
+  11344: .navbar-light .navbar-nav .show > .nav-link,
+  11345: .navbar-light .navbar-nav .active > .nav-link,
+  11346: .navbar-light .navbar-nav .nav-link.show,
+  11347: .navbar-light .navbar-nav .nav-link.active {
+  11348    color: rgba(0, 0, 0, 0.9); }
+  11349  
+  11350: .navbar-light .navbar-toggler {
+  11351    color: rgba(0, 0, 0, 0.5);
+
+  11353  
+  11354: .navbar-light .navbar-toggler-icon {
+  11355    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  11356  
+  11357: .navbar-light .navbar-text {
+  11358    color: rgba(0, 0, 0, 0.5); }
+  11359:   .navbar-light .navbar-text a {
+  11360      color: rgba(0, 0, 0, 0.9); }
+  11361:     .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
+  11362        color: rgba(0, 0, 0, 0.9); }
+  11363  
+  11364: .navbar-dark .navbar-brand {
+  11365    color: #fff; }
+  11366:   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  11367      color: #fff; }
+  11368  
+  11369: .navbar-dark .navbar-nav .nav-link {
+  11370    color: rgba(255, 255, 255, 0.5); }
+  11371:   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  11372      color: rgba(255, 255, 255, 0.75); }
+  11373:   .navbar-dark .navbar-nav .nav-link.disabled {
+  11374      color: rgba(255, 255, 255, 0.25); }
+  11375  
+  11376: .navbar-dark .navbar-nav .show > .nav-link,
+  11377: .navbar-dark .navbar-nav .active > .nav-link,
+  11378: .navbar-dark .navbar-nav .nav-link.show,
+  11379: .navbar-dark .navbar-nav .nav-link.active {
+  11380    color: #fff; }
+  11381  
+  11382: .navbar-dark .navbar-toggler {
+  11383    color: rgba(255, 255, 255, 0.5);
+
+  11385  
+  11386: .navbar-dark .navbar-toggler-icon {
+  11387    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  11388  
+  11389: .navbar-dark .navbar-text {
+  11390    color: rgba(255, 255, 255, 0.5); }
+  11391:   .navbar-dark .navbar-text a {
+  11392      color: #fff; }
+  11393:     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
+  11394        color: #fff; }
+
+  12995  
+  12996: .d-flex, .page-header, .loader-demo-box, .list-wrapper ul li, .lightGallery .image-tile .demo-gallery-poster, .swal2-modal, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link {
+  12997    display: flex !important; }
+
+  13204  
+  13205: .align-items-center, .page-header, .loader-demo-box, .list-wrapper ul li, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item {
+  13206    align-items: center !important; }
+
+  13706  
+  13707: .mr-0, .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item i,
+  13708  .mx-0 {
+
+  13714  
+  13715: .ml-0, .rtl .preview-list .preview-item .preview-thumbnail img i, .rtl .preview-list .preview-item .preview-thumbnail .preview-icon i, .rtl .list-wrapper .remove, .rtl .navbar .navbar-menu-wrapper .search-field,
+  13716  .mx-0 {
+
+  13784  
+  13785: .mr-4, .rtl .navbar .navbar-menu-wrapper .search-field,
+  13786  .mx-4 {
+
+  15278      min-width: 992px !important; }
+  15279:   .navbar {
+  15280      display: none; }
+
+  15321  
+  15322: .dropdownAnimation, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu {
+  15323    animation-name: dropdownAnimation;
+
+  16958  
+  16959: .navbar .form-control, .navbar .asColorPicker-input, .navbar .dataTables_wrapper select, .dataTables_wrapper .navbar select, .navbar .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar input[type=text],
+  16960: .navbar .jsgrid .jsgrid-table .jsgrid-filter-row select, .jsgrid .jsgrid-table .jsgrid-filter-row .navbar select, .navbar .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar input[type=number], .navbar .select2-container--default .select2-selection--single, .select2-container--default .navbar .select2-selection--single, .navbar .select2-container--default .select2-selection--single .select2-search__field, .select2-container--default .select2-selection--single .navbar .select2-search__field, .navbar .typeahead,
+  16961: .navbar .tt-query,
+  16962: .navbar .tt-hint {
+  16963    width: 75%;
+  16964    border-radius: 6px; }
+  16965:   .navbar .form-control:focus, .navbar .asColorPicker-input:focus, .navbar .dataTables_wrapper select:focus, .dataTables_wrapper .navbar select:focus, .navbar .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=text], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar input:focus[type=text],
+  16966:   .navbar .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row .navbar select:focus, .navbar .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=number], .jsgrid .jsgrid-table .jsgrid-filter-row .navbar input:focus[type=number], .navbar .select2-container--default .select2-selection--single:focus, .select2-container--default .navbar .select2-selection--single:focus, .navbar .select2-container--default .select2-selection--single .select2-search__field:focus, .select2-container--default .select2-selection--single .navbar .select2-search__field:focus, .navbar .typeahead:focus,
+  16967:   .navbar .tt-query:focus,
+  16968:   .navbar .tt-hint:focus {
+  16969      border: none; }
+
+  20339  
+  20340: /* Navbar */
+  20341: .navbar {
+  20342    font-weight: normal;
+
+  20349    @media (max-width: 992px) {
+  20350:     .navbar {
+  20351        left: 0; } }
+  20352:   .navbar .navbar-brand-wrapper {
+  20353      transition: width 0.25s ease, background 0.25s ease;
+
+  20360      @media (max-width: 991px) {
+  20361:       .navbar .navbar-brand-wrapper {
+  20362          width: 55px; } }
+  20363:     .navbar .navbar-brand-wrapper .navbar-brand {
+  20364        color: #38425e;
+
+  20369        width: 100%; }
+  20370:       .navbar .navbar-brand-wrapper .navbar-brand:active, .navbar .navbar-brand-wrapper .navbar-brand:focus, .navbar .navbar-brand-wrapper .navbar-brand:hover {
+  20371          color: #252b3e; }
+  20372:       .navbar .navbar-brand-wrapper .navbar-brand img {
+  20373          width: calc(244px - 120px);
+
+  20377          vertical-align: middle; }
+  20378:       .navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini {
+  20379          display: none; }
+  20380:         .navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini img {
+  20381            width: calc(70px - 50px);
+
+  20384            margin: auto; }
+  20385:   .navbar .navbar-menu-wrapper {
+  20386      transition: width 0.25s ease;
+
+  20397      height: 70px; }
+  20398:     .rtl .navbar .navbar-menu-wrapper {
+  20399        box-shadow: -34px 19px 34px -15px #000000;
+
+  20402      @media (max-width: 991px) {
+  20403:       .navbar .navbar-menu-wrapper {
+  20404          width: auto;
+
+  20406          padding-right: 15px; } }
+  20407:     .navbar .navbar-menu-wrapper .navbar-toggler {
+  20408        border: 0;
+
+  20411        border-radius: 0px; }
+  20412:       .navbar .navbar-menu-wrapper .navbar-toggler:not(.navbar-toggler-right) {
+  20413          font-size: 0.875rem; }
+  20414          @media (max-width: 991px) {
+  20415:           .navbar .navbar-menu-wrapper .navbar-toggler:not(.navbar-toggler-right) {
+  20416              display: none; } }
+  20417        @media (max-width: 991px) {
+  20418:         .navbar .navbar-menu-wrapper .navbar-toggler.navbar-toggler-right {
+  20419            padding-left: 15px;
+
+  20421            border-right: none; } }
+  20422:     .navbar .navbar-menu-wrapper .search-field .input-group input, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap input {
+  20423        font-size: 0.875rem;
+  20424        padding: .5rem; }
+  20425:       .navbar .navbar-menu-wrapper .search-field .input-group input:-ms-input-placeholder, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap input:-ms-input-placeholder {
+  20426          font-size: 0.9375rem;
+
+  20428          font-weight: 300; }
+  20429:       .navbar .navbar-menu-wrapper .search-field .input-group input:-moz-placeholder, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap input:-moz-placeholder {
+  20430          font-size: 0.9375rem;
+
+  20432          font-weight: 300; }
+  20433:       .navbar .navbar-menu-wrapper .search-field .input-group input::-moz-placeholder, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap input::-moz-placeholder {
+  20434          font-size: 0.9375rem;
+
+  20436          font-weight: 300; }
+  20437:       .navbar .navbar-menu-wrapper .search-field .input-group input::-webkit-input-placeholder, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap input::-webkit-input-placeholder {
+  20438          font-size: 0.9375rem;
+
+  20440          font-weight: 300; }
+  20441:     .navbar .navbar-menu-wrapper .search-field .input-group i, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap i {
+  20442        font-size: 17px;
+
+  20444        color: #ffffff; }
+  20445:     .navbar .navbar-menu-wrapper .search-field .input-group .input-group-text, .navbar .navbar-menu-wrapper .search-field .asColorPicker-wrap .input-group-text {
+  20446        background: transparent; }
+  20447:     .navbar .navbar-menu-wrapper .count-indicator {
+  20448        position: relative; }
+  20449:       .navbar .navbar-menu-wrapper .count-indicator .count-symbol,
+  20450:       .navbar .navbar-menu-wrapper .count-indicator .count-number {
+  20451          position: absolute;
+
+  20453          border: 2px solid #191c24; }
+  20454:       .navbar .navbar-menu-wrapper .count-indicator .count-symbol {
+  20455          top: 17px;
+
+  20458          height: 10px; }
+  20459:       .navbar .navbar-menu-wrapper .count-indicator .count-number {
+  20460          min-width: 14px;
+
+  20467          text-align: center; }
+  20468:       .navbar .navbar-menu-wrapper .count-indicator:after {
+  20469          display: none; }
+  20470:       .navbar .navbar-menu-wrapper .count-indicator .count {
+  20471          position: absolute;
+
+  20480          top: 7px; }
+  20481:     .navbar .navbar-menu-wrapper .navbar-nav {
+  20482        flex-direction: row;
+  20483        align-items: center; }
+  20484:       .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+  20485          color: inherit;
+
+  20490          @media (max-width: 767px) {
+  20491:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
+  20492              margin-left: .8rem;
+  20493              margin-right: .8rem; } }
+  20494:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link i {
+  20495            font-size: 1.125rem; }
+  20496:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .navbar-profile {
+  20497            display: flex;
+
+  20499            align-items: center; }
+  20500:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .navbar-profile .navbar-profile-name {
+  20501              white-space: nowrap;
+  20502              margin-left: 1rem; }
+  20503:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link .navbar-profile i {
+  20504              color: #a7afb7; }
+  20505:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link.create-new-button {
+  20506            padding: 0.375rem 0.75rem; }
+  20507:       .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown {
+  20508          line-height: 1rem; }
+  20509:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-toggle:after {
+  20510            color: #0090e7;
+  20511            font-size: 1rem; }
+  20512:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu {
+  20513            border: none;
+  20514            border-radius: 4px; }
+  20515:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
+  20516              position: absolute;
+
+  20525              padding: 0; }
+  20526:             .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
+  20527                right: auto;
+  20528                left: 0; }
+  20529:             .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item {
+  20530                margin-bottom: 0;
+
+  20532                cursor: pointer; }
+  20533:               .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item:hover {
+  20534                  color: #fff; }
+  20535:               .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item i {
+  20536                  font-size: 17px; }
+  20537:               .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item .ellipsis {
+  20538                  max-width: 200px;
+
+  20540                  text-overflow: ellipsis; }
+  20541:               .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-item i {
+  20542                  margin-left: 10px; }
+  20543:             .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-divider {
+  20544                margin: 0; }
+  20545          @media (max-width: 991px) {
+  20546:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown {
+  20547              position: static; }
+  20548:             .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
+  20549                left: 20px;
+
+  20552                width: calc(100% - 40px); } }
+  20553:       .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img {
+  20554          position: relative;
+
+  20556          height: 32px; }
+  20557:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img img {
+  20558            width: 32px;
+
+  20560            border-radius: 100%; }
+  20561:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img .availability-status {
+  20562            position: absolute;
+
+  20568            right: -5px; }
+  20569:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img .availability-status.online {
+  20570              background: #00d25b; }
+  20571:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img .availability-status.offline {
+  20572              background: #fc424a; }
+  20573:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img .availability-status.busy {
+  20574              background: #ffab00; }
+  20575:       .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-text {
+  20576          margin-left: 1.25rem; }
+  20577:         .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-text {
+  20578            margin-left: 0;
+  20579            margin-right: 1.25rem; }
+  20580:         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-text p {
+  20581            line-height: 1; }
+  20582          @media (max-width: 767px) {
+  20583:           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-text {
+  20584              display: none; } }
+  20585:       .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link.dropdown-toggle:after {
+  20586          line-height: 2; }
+  20587        @media (min-width: 992px) {
+  20588:         .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+  20589            margin-left: auto; }
+  20590:           .rtl .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right {
+  20591              margin-left: 0;
+  20592              margin-right: auto; } }
+  20593:     .navbar .navbar-menu-wrapper .search input {
+  20594        background: #191c24;
+
+  20596        border: 1px solid #2c2e33; }
+  20597:       .navbar .navbar-menu-wrapper .search input::placeholder {
+  20598          color: #6c7293;
+
+  20601  @media (max-width: 991px) {
+  20602:   .navbar {
+  20603      flex-direction: row; }
+  20604:     .navbar .navbar-brand-wrapper {
+  20605        width: 75px; }
+  20606:       .navbar .navbar-brand-wrapper .navbar-brand.brand-logo {
+  20607          display: none; }
+  20608:       .navbar .navbar-brand-wrapper .navbar-brand.brand-logo-mini {
+  20609          display: inline-block; }
+  20610:   .navbar-collapse {
+  20611      display: flex;
+
+  20614  @media (max-width: 480px) {
+  20615:   .navbar .navbar-brand-wrapper {
+  20616      width: 55px; }
+  20617:     .navbar .navbar-brand-wrapper .brand-logo-mini {
+  20618        padding-top: 0px; } }
+  20619  
+  20620: .sidebar-tinted .navbar .navbar-brand-wrapper {
+  20621    background: #fa424a; }
+
+  20965  /* Layouts */
+  20966: .navbar.fixed-top + .page-body-wrapper {
+  20967    padding-top: 70px; }
+
+  20969  @media (min-width: 992px) {
+  20970:   .sidebar-icon-only .navbar {
+  20971      left: 70px; }
+  20972:     .sidebar-icon-only .navbar .navbar-menu-wrapper {
+  20973        width: 100%; }
+
+public\admin\assets\css\maps\style.css.map:
+  1: ⟪ 9059 characters skipped ⟫up.scss","../../node_modules/bootstrap/scss/_input-group.scss","../../node_modules/bootstrap/scss/_custom-forms.scss","../../node_modules/bootstrap/scss/_nav.scss","../../node_modules/bootstrap/scss/_navbar.scss","../../node_modules/bootstrap/scss/_card.scss","../../node_modules/bootstrap/scss/_breadcrumb.scss","../../node_modules/bootstrap/scss/_pagination.scss","../../node_modules/bootstrap/scss/_badge.scss","../../node_modules/bootstrap/scss/_jumbotron.scss","../../node_modules/bootstrap/scss/_alert.scss","../../node_modules/bootstrap/scss/_progress.scss","../../node_modules/bootstrap/scss/_media.scss","../../node_modules/bootstrap/scss/_list-group.scss","../../node_modules/bootstrap/scss/_close.scss","../../node_modules/bootstrap/scss/_toasts.scss","../../node_modules/bootstrap/scss/_modal.scss","../../node_modules/bootstrap/scss/_tooltip.scss","../../node_modules/bootstrap/scss/_popover.scss","../../node_modules/bootstrap/scss/_carousel.scss","../../node_modules/bootstrap/scss/_spinners.scss","../../node_modules/bootstrap/scss/_utilities.scss","../../node_modules/bootstrap/scss/utilities/_align.scss","../../node_modules/bootstrap/scss/utilities/_background.scss","../../node_mo⟪ 4187 characters skipped ⟫des/_typeahead.scss","components/plugin-overrides/_wysieditor.scss","components/plugin-overrides/_x-editable.scss","components/plugin-overrides/_wizard.scss","components/landing-screens/_auth.scss","_navbar.scss","_sidebar.scss","_layouts.scss","vertical/_vertical-wrapper.scss"],"sourcesContent":["/*-------------------------------------------------------------------\n  ===== Table of Contents =====\n\n  * Bootstrap functions\n  * Template variables\n  * SCSS Compass Functions\n  * Boostrap Main SCSS\n  * Template mixins\n    + Animation Mixins\n    + Background Mixins\n    + Badge Mixins\n    + Button Mixins\n    + Miscellaneous Mixins\n    + BlockQuote Mixins\n    + Cards Mixins\n    + Color Functions Mixins\n    + Tooltips\n    + popovers\n  * Core Styles\n    + Reset Styles\n    + Fonts\n    + Functions\n    + Backgrounds\n    + Typography\n    + Miscellaneous\n    + Footer\n    + Layouts\n    + Utilities\n    + Demo styles\n  * Components\n    + Accordions\n    + Badges\n    + Bootstrap Alerts\n    + Boostrap Progress\n    + Buttons\n    + Breadcrumbs\n    + Cards\n    + Checkboxes and Radios\n    + Dropdowns\n    + Forms\n    + Google maps\n    + Icons\n    + Loaders\n    + Li⟪ 6435 characters skipped ⟫onents/plugin-overrides/wizard\";\n\n/*-------------------------------------------------------------------*/\n/* === Landing screens === */\n@import \"components/landing-screens/auth\";\n\n@import './navbar';\n@import './sidebar';\n@import './layouts';\n@import './vertical/vertical-wrapper';","// Bootstrap functions\n//\n// Utility mixins and functions for evaluating source code across our variables, maps, and mixins.\n\n// Ascending\n// Used to evaluate Sass maps like our grid breakpoints.\n@mixin _assert-ascending($map, $map-name) {\n  $prev-key: null;\n  $prev-num: null;\n  @each $key, $num in $map {\n    @if $prev-num == null or unit($num) == \"%\" or unit($prev-num) == \"%\" {\n      // Do nothing\n    } @else if not comparable($prev-num, $num) {\n      @warn \"Potentially invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} whose unit makes it incomparable to #{$prev-num}, the value of the previous key '#{$prev-key}' !\";\n    } @else if $prev-num >= $num {\n      @warn \"Invalid value for #{$map-name}: This map must be in ascending order, but key '#{$key}' has value #{$num} which isn't greater than #{$prev-num}, the value o⟪ 33921 characters skipped ⟫ault;\n$nav-pills-link-active-bg:          $component-active-bg !default;\n\n$nav-divider-color:                 $gray-200 !default;\n$nav-divider-margin-y:              $spacer / 2 !default;\n\n\n// Navbar\n\n$navbar-padding-y:                  $spacer / 2 !default;\n$navbar-padding-x:                  $spacer !default;\n\n$navbar-nav-link-padding-x:         .5rem !default;\n\n$navbar-brand-font-size:            $font-size-lg !default;\n// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link\n$nav-link-height:                   $font-size-base * $line-height-base + $nav-link-padding-y * 2 !default;\n$navbar-brand-height:               $navbar-brand-font-size * $line-height-base !default;\n$navbar-brand-padding-y:            ($nav-link-height - $navbar-brand-height) / 2 !default;\n\n$navbar-toggler-padding-y:          .25rem !default;\n$navbar-toggler-padding-x:          .75rem !default;\n$navbar-toggler-font-size:          $font-size-lg !default;\n$navbar-toggler-border-radius:      $btn-border-radius !default;\n\n$navbar-dark-color:                 rgba($white, .5) !default;\n$navbar-dark-hover-color:           rgba($white, .75) !default;\n$navbar-dark-active-color:          $white !default;\n$navbar-dark-disabled-color:        rgba($white, .25) !default;\n$navbar-dark-toggler-icon-bg:       url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>\") !default;\n$navbar-dark-toggler-border-color:  rgba($white, .1) !default;\n\n$navbar-light-color:                rgba($black, .5) !default;\n$navbar-light-hover-color:          rgba($black, .7) !default;\n$navbar-light-active-color:         rgba($black, .9) !default;\n$navbar-light-disabled-color:       rgba($black, .3) !default;\n$navbar-light-toggler-icon-bg:      url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>\") !default;\n$navbar-light-toggler-border-color: rgba($black, .1) !default;\n\n$navbar-light-brand-color:                $navbar-light-active-color !default;\n$navbar-light-brand-hover-color:          $navbar-light-active-color !default;\n$navbar-dark-brand-color:                 $navbar-dark-active-color !default;\n$navbar-dark-brand-hover-color:           $navbar-dark-active-color !default;\n\n\n// Dropdowns\n//\n// Dropdown menu container and contents.\n\n$dropdown-min-width:                10rem !default;\n$dropdown-padding-x:                0 !default;\n$dropdown-padding-y:                .5rem !default;\n$dropdown-spacer:                   .125rem !default;\n$dropdown-font-size:                $font-size-base !default;\n$dropdown-color:                    $body-color !default;\n$dropdown-bg:                       $white !default;\n$dropdown-border-color:             rgba($black, .15) !default;\n$dropdown-border-radius:            $border-radius !default;\n$dropdown-border-width:             $border-width !default;\n$dropdown-inner-border-radius:      subtract($dropdown-border-radius, $dropdown-border-width) !default;\n$dropdown-divider-bg:               $gray-200 !default;\n$dropdown-divider-margin-y:         $nav-divider-margin-y !default;\n$dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;\n\n$dropdown-li⟪ 17592 characters skipped ⟫$table-dark-bg: #212529;\n$table-bg-level: 1;\n//////// TABLES ////////\n\n////////// MODALS VARIABLES //////////\n$modal-content-bg: $content-bg;\n////////// MODALS VARIABLES //////////\n\n///////// NAVBAR ////////\n$navbar-bg: #191c24;\n$navbar-brand-wrapper-tinted-bg: #fa424a;\n$navbar-height: 70px;\n$navbar-menu-color: #ffffff;\n$navbar-font-size: .9375rem;\n$navbar-icon-font-size: 1.125rem;\n\n///////// NAVBAR ////////\n\n////////// SIDEBAR ////////\n$sidebar-width-lg: 244px;\n$sidebar-width-mini: 185px;\n$sidebar-width-icon: 70px;\n\n$sidebar-dark-bg: #191c24;\n$sidebar-dark-menu-color: $text-muted;\n$sidebar-dark-menu-active-bg: darken($sidebar-dark-bg, 5%);\n$sidebar-dark-menu-active-color: #ffffff;\n$sidebar-dark-menu-hover-bg: darken($sidebar-dark-bg, 5%);\n$sidebar-dark-menu-hover-color: color(white);\n$sidebar-dark-submenu-color: $sidebar-dark-menu-color;\n$sidebar-dark-submenu-hover-bg: initial;\n$sidebar-dark-submenu-hover-color: #ffffff;\n$sidebar-dark-menu-icon-color: #bba8bff5;\n$sidebar-dark-menu-arrow-color: rgba($text-muted, 0.36);\n\n$sidebar-tinted-bg: #fa424a;\n$sidebar-tinted-menu-color: #ffffff;\n$sidebar-tinted-menu-active-bg: rgba(12, 14, 14, 0.1);\n$sidebar-tinted-menu-hover-bg: rgba(12, 14, 14, 0.1);\n$sidebar-tinted-menu-arrow-color: rgba($sidebar-tinted-menu-color, 0.36);\n\n$sidebar-menu-font-size: 0.9375rem;\n$sidebar-menu-padding-y: 0.8rem;\n$sidebar-menu-⟪ 456 characters skipped ⟫\n\n$rtl-sidebar-submenu-padding: 0 1.5rem 0 0;\n\n$icon-only-collapse-width: 190px;\n$icon-only-menu-bg-light: $sidebar-dark-menu-hover-bg;\n$icon-only-menu-bg-dark: $sidebar-dark-menu-hover-bg;\n\n$navbar-box-shadow: 20px 19px 34px -15px rgba(0,0,0,0.5);\n$navbar-box-shadow-rtl: -34px 19px 34px -15px $content-bg;\n\n///////// SIDEBAR ////////\n\n\n\n///////// BUTTONS ////////\n\n$button-fixed-width: 150px;\n$btn-padding-y: .375rem;\n$btn-padding-x: .75rem;\n$btn-line-height: 1;\n\n$btn-padding-y-xs: .5rem;\n$btn-padding-x-xs: .75rem;\n\n$btn-padding-y-sm: .25rem;\n$btn-padding-x-sm: .5rem;\n\n$btn-padding-y-lg: 1rem;\n$btn-padding-x-lg: 3rem;\n\n$btn-font-size: 0.9375rem;\n$btn-font-size-xs: 0.625rem;\n$btn-font-size-sm: 0.875rem;\n$btn-font-size-lg: 0.875rem;\n\n$btn-border-radius: .1875rem;\n$btn-border-radius-xs: .1875rem;\n$btn-border-radius-sm: .1875rem;\n$btn-border-radius-lg: .1875rem;\n///////// BUTTONS ////////\n\n\n\n////////// TOOLTIP VARIABLES //////////\n//default styles\n$tooltip-font-size: .75rem;\n$tooltip-padding-y: .4rem;\n$tooltip-padding-x: .75rem;\n$tooltip-border-radius: .375rem;\n////////// TOOLTIP VARIABLES //////////\n$popover-bg: theme-color(dark);\n$popover-border-color: $border-color;\n$popover-arrow-color: $p⟪ 166522 characters skipped ⟫n@import \"forms\";\n@import \"buttons\";\n@import \"transitions\";\n@import \"dropdown\";\n@import \"button-group\";\n@import \"input-group\";\n@import \"custom-forms\";\n@import \"nav\";\n@import \"navbar\";\n@import \"card\";\n@import \"breadcrumb\";\n@import \"pagination\";\n@import \"badge\";\n@import \"jumbotron\";\n@import \"alert\";\n@import \"progress\";\n@import \"media\";\n@import \"list-group\";\n@import \"close\";\n@import \"toasts\";\n@import \"modal\";\n@import \"tooltip\";\n@import \"popover\";\n@import \"carousel\";\n@import \"spinners\";\n@import \"utilities\";\n@import \"print\";\n","// Toggles\n//\n// Used in conjunction with global variables to enable certain theme features.\n\n// Vendor\n@import \"vendor/rfs\";\n\n// Deprecate\n@import \"mixins/deprecate\";\n\n// Utilities\n@import \"mixins/breakpoints\";\n@import \"mixins/hover\";\n@import \"mixins/image\";\n@import \"mixins/badge\";\n@import \"mixins/resize\";\n@import \"mixins/screen-reader\";\n@import \"mixins/size\";\n@import \"mixins/reset-text\";\n@import \"mixins/text-emphasis\";\n@import \"mixins/text-hide\";\n@import \"mixins/text-truncate\";\n@import \"mixins/visibility\";\n\n// Components\n@import ⟪ 58963 characters skipped ⟫le scrollable blocks of code\n.pre-scrollable {\n  max-height: $pre-scrollable-max-height;\n  overflow-y: scroll;\n}\n","// Container widths\n//\n// Set the container width, and override it for fixed navbars in media queries.\n\n@if $enable-grid-classes {\n  // Single container class with breakpoint max-widths\n  .container,\n  // 100% wide container at all breakpoints\n  .container-fluid {\n    @include make-container();\n  }\n\n  // Responsive containers that are 100% wide until a breakpoint\n  @each $breakpoint, $container-max-width in $container-max-widths {\n    .container-#{$breakpoint} {\n      @extend .container-fluid;\n    }\n\n    @include media-breakpoint-up($breakpoint, $grid-breakpoints) {\n      %responsive-container-#{$breakpoint} {\n        max-width: $container-max-width;\n      }\n\n      // Extend each breakpoint which is smaller or equal to the current breakpoint\n      $extend-breakpoint: true;\n\n      @each $name, $width in $grid-breakpoints {\n        @if ($extend-breakpoint) {\n          .container#{breakpoint-infix($name, $grid-breakpoints)} {\n            @extend %responsive-container-#{$breakpoint};\n          }\n\n          // Once the current breakpoin⟪ 49947 characters skipped ⟫ble tabs\n//\n// Hide tabbable panes to start, show them when `.active`\n\n.tab-content {\n  > .tab-pane {\n    display: none;\n  }\n  > .active {\n    display: block;\n  }\n}\n","// Contents\n//\n// Navbar\n// Navbar brand\n// Navbar nav\n// Navbar text\n// Navbar divider\n// Responsive navbar\n// Navbar position\n// Navbar themes\n\n\n// Navbar\n//\n// Provide a static navbar from which we expand to create full-width, fixed, and\n// other navbar variations.\n\n.navbar {\n  position: relative;\n  display: flex;\n  flex-wrap: wrap; // allow us to do the line break for collapsing content\n  align-items: center;\n  justify-content: space-between; // space out brand from logo\n  padding: $navbar-padding-y $navbar-padding-x;\n\n  // Because flex properties aren't inherited, we need to redeclare these first\n  // few properties so that content nested within behave properly.\n  %container-flex-properties {\n    display: flex;\n    flex-wrap: wrap;\n    align-items: center;\n    justify-content: space-between;\n  }\n\n  .container,\n  .container-fluid {\n    @extend %container-flex-properties;\n  }\n\n  @each $breakpoint, $container-max-width in $container-max-widths {\n    > .container#{breakpoint-infix($breakpoint, $container-max-widths)} {\n      @extend %container-flex-properties;\n    }\n  }\n}\n\n\n// Navbar brand\n//\n// Used for brand, project, or site names.\n\n.navbar-brand {\n  display: inline-block;\n  padding-top: $navbar-brand-padding-y;\n  padding-bottom: $navbar-brand-padding-y;\n  margin-right: $navbar-padding-x;\n  @include font-size($navbar-brand-font-size);\n  line-height: inherit;\n  white-space: nowrap;\n\n  @include hover-focus() {\n    text-decoration: none;\n  }\n}\n\n\n// Navbar nav\n//\n// Custom navbar navigation (doesn't require `.nav`, but does make use of `.nav-link`).\n\n.navbar-nav {\n  display: flex;\n  flex-direction: column; // cannot use `inherit` to get the `.navbar`s value\n  padding-left: 0;\n  margin-bottom: 0;\n  list-style: none;\n\n  .nav-link {\n    padding-right: 0;\n    padding-left: 0;\n  }\n\n  .dropdown-menu {\n    position: static;\n    float: none;\n  }\n}\n\n\n// Navbar text\n//\n//\n\n.navbar-text {\n  display: inline-block;\n  padding-top: $nav-link-padding-y;\n  padding-bottom: $nav-link-padding-y;\n}\n\n\n// Responsive navbar\n//\n// Custom styles for responsive collapsing and toggling of navbar contents.\n// Powered by the collapse Bootstrap JavaScript plugin.\n\n// When collapsed, prevent the toggleable navbar contents from appearing in\n// the default flexbox row orientation. Requires the use of `flex-wrap: wrap`\n// on the `.navbar` parent.\n.navbar-collapse {\n  flex-basis: 100%;\n  flex-grow: 1;\n  // For always expanded or extra full navbars, ensure content aligns itself\n  // properly vertically. Can be easily overridden with flex utilities.\n  align-items: center;\n}\n\n// Button for toggling the navbar when in its collapsed state\n.navbar-toggler {\n  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;\n  @include font-size($navbar-toggler-font-size);\n  line-height: 1;\n  background-color: transparent; // remove default button style\n  border: $border-width solid transparent; // remove default button style\n  @include border-radius($navbar-toggler-border-radius);\n\n  @include hover-focus() {\n    text-decoration: none;\n  }\n}\n\n// Keep as a separate element so folks can easily override it with another icon\n// or image file as needed.\n.navbar-toggler-icon {\n  display: inline-block;\n  width: 1.5em;\n  height: 1.5em;\n  vertical-align: middle;\n  content: \"\";\n  background: no-repeat center center;\n  background-size: 100% 100%;\n}\n\n// Generate series of `.navbar-expand-*` responsive classes for configuring\n// where your navbar collapses.\n.navbar-expand {\n  @each $breakpoint in map-keys($grid-breakpoints) {\n    $next: breakpoint-next($breakpoint, $grid-breakpoints);\n    $infix: breakpoint-infix($next, $grid-breakpoints);\n\n    &#{$infix} {\n      @include media-breakpoint-down($breakpoint) {\n        %container-navbar-expand-#{$breakpoint} {\n          padding-right: 0;\n          padding-left: 0;\n        }\n\n        > .container,\n        > .container-fluid {\n          @extend %container-navbar-expand-#{$breakpoint};\n        }\n\n        @each $size, $container-max-width in $container-max-widths {\n          > .container#{breakpoint-infix($size, $container-max-widths)} {\n            @extend %container-navbar-expand-#{$breakpoint};\n          }\n        }\n      }\n\n      @include media-breakpoint-up($next) {\n        flex-flow: row nowrap;\n        justify-content: flex-start;\n\n        .navbar-nav {\n          flex-direction: row;\n\n          .dropdown-menu {\n            position: absolute;\n          }\n\n          .nav-link {\n            padding-right: $navbar-nav-link-padding-x;\n            padding-left: $navbar-nav-link-padding-x;\n          }\n        }\n\n        // For nesting containers, have to redeclare for alignment purposes\n        %container-nesting-#{$breakpoint} {\n          flex-wrap: nowrap;\n        }\n\n        > .container,\n        > .container-fluid {\n          @extend %container-nesting-#{$breakpoint};\n        }\n\n        @each $size, $container-max-width in $container-max-widths {\n          > .container#{breakpoint-infix($size, $container-max-widths)} {\n            @extend %container-nesting-#{$breakpoint};\n          }\n        }\n\n        .navbar-collapse {\n          display: flex !important; // stylelint-disable-line declaration-no-important\n\n          // Changes flex-bases to auto because of an IE10 bug\n          flex-basis: auto;\n        }\n\n        .navbar-toggler {\n          display: none;\n        }\n      }\n    }\n  }\n}\n\n\n// Navbar themes\n//\n// Styles for switching between navbars with light or dark background.\n\n// Dark links against a light background\n.navbar-light {\n  .navbar-brand {\n    color: $navbar-light-brand-color;\n\n    @include hover-focus() {\n      color: $navbar-light-brand-hover-color;\n    }\n  }\n\n  .navbar-nav {\n    .nav-link {\n      color: $navbar-light-color;\n\n      @include hover-focus() {\n        color: $navbar-light-hover-color;\n      }\n\n      &.disabled {\n        color: $navbar-light-disabled-color;\n      }\n    }\n\n    .show > .nav-link,\n    .active > .nav-link,\n    .nav-link.show,\n    .nav-link.active {\n      color: $navbar-light-active-color;\n    }\n  }\n\n  .navbar-toggler {\n    color: $navbar-light-color;\n    border-color: $navbar-light-toggler-border-color;\n  }\n\n  .navbar-toggler-icon {\n    background-image: escape-svg($navbar-light-toggler-icon-bg);\n  }\n\n  .navbar-text {\n    color: $navbar-light-color;\n    a {\n      color: $navbar-light-active-color;\n\n      @include hover-focus() {\n        color: $navbar-light-active-color;\n      }\n    }\n  }\n}\n\n// White links against a dark background\n.navbar-dark {\n  .navbar-brand {\n    color: $navbar-dark-brand-color;\n\n    @include hover-focus() {\n      color: $navbar-dark-brand-hover-color;\n    }\n  }\n\n  .navbar-nav {\n    .nav-link {\n      color: $navbar-dark-color;\n\n      @include hover-focus() {\n        color: $navbar-dark-hover-color;\n      }\n\n      &.disabled {\n        color: $navbar-dark-disabled-color;\n      }\n    }\n\n    .show > .nav-link,\n    .active > .nav-link,\n    .nav-link.show,\n    .nav-link.active {\n      color: $navbar-dark-active-color;\n    }\n  }\n\n  .navbar-toggler {\n    color: $navbar-dark-color;\n    border-color: $navbar-dark-toggler-border-color;\n  }\n\n  .navbar-toggler-icon {\n    background-image: escape-svg($navbar-dark-toggler-icon-bg);\n  }\n\n  .navbar-text {\n    color: $navbar-dark-color;\n    a {\n      color: $navbar-dark-active-color;\n\n      @include hover-focus() {\n        color: $navbar-dark-active-color;\n      }\n    }\n  }\n}\n","//\n// Base styles\n//\n\n.card {\n  position: relative;\n  display: flex;\n  flex-direction: column;\n  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106\n  height: $card-height;\n  word-wrap: break-word;\n  background-color: $card-bg;\n  background-clip: border-box;\n  border: $card-border-width solid $card-border-color;\n  @include border-radius($card-border-radius);\n\n  > hr {\n    margin-right: 0;\n    margin-left: 0;\n  }\n\n  > .list-group {\n    border-top: inherit;\n    border-bottom: inherit;\n\n    &:first-child {\n      border-top-width: 0;\n      @include border-top-radius($card-inner-border-radius);\n    }\n\n    &:last-child  {\n      border-bottom-width: 0;\n      @include border-bottom-radius($card-inner-border-radius);\n    }\n  }\n\n  // Due to specificity of the above selector (`.card > .list-group`), we must\n  // use a child selector here to prevent double borders.\n  > .⟪ 56139 characters skipped ⟫e-size;\n    }\n    body {\n      min-width: $print-body-min-width !important;\n    }\n    .container {\n      min-width: $print-body-min-width !important;\n    }\n\n    // Bootstrap components\n    .navbar {\n      display: none;\n    }\n    .badge {\n      border: $border-width solid $black;\n    }\n\n    .table {\n      border-collapse: collapse !important;\n\n      td,\n      th {\n        background-color: $white !important;\n      }\n    }\n\n    .table-bordered {\n      th,\n      td {\n        border: 1px solid $gray-300 !important;\n      }\n    }\n\n    .table-dark {\n      color: inherit;\n\n      th,\n      td,\n      thead th,\n      tbody + tbody {\n        border-color: $table-border-color;\n      }\n    }\n\n    .table .thead-dark th {\n      color: inherit;\n      border-color: $table-border-color;\n    }\n\n    // Bootstrap specific changes end\n  }\n}\n","/* Miscellaneous Mixins */\n\n// general transform\n@mixin transform($transforms) {\n\t   -moz-transform: $transforms;\n\t     -o-transform: $transforms;\n\t    -ms-transform: $transforms;\n\t-webkit-transform: $transforms;\n          transform: $transforms;\n}\n\n// rotate\n@mixin rotate ($deg) {\n  @include tr⟪ 30242 characters skipped ⟫  }\n\n  &.form-control-sm {\n    padding: 0.5rem .75rem;\n    height: calc(1.8125rem + 2px);\n  }\n  &::placeholder {\n    color: $text-muted;\n    font-size: $input-placeholder-font-size;\n  }\n}\n.navbar {\n  .form-control {\n    width: 75%;\n    border-radius: 6px;\n    &:focus {\n      border: none;\n    }\n  }\n}\n\nselect {\n  &.form-control {\n    padding: .4375rem .75rem;\n    border: 0;\n    color: $input-placeholder-color;\n    &:focus {\n      outline: 1px solid $border-color;\n    }\n    @each $color, $value in $theme-colors {\n      &.border-#{$color} {\n        outline: 1px solid $value;\n        &:focus {\n          outline: 1px solid $value;\n        }\n      }\n    }\n  }\n}\n.form-group {\n  label {\n    font-size: $default-font-size;\n    line-height: 1;\n    vertical-align: top;\n  }\n  &.has-danger {\n    .form-control {\n      border-color: theme-color(danger);\n    }\n  }\n  .file-upload-default {\n    visibility: hidden;\n    position: absolute;\n  }\n  .file-upload-info {\n    background: transparent;\n  }\n}\n\n.form-check {\n  min-height: 18px;\n  padding-left: 1.25rem;\n}\n\ndiv {\n  &.tagsinput {\n    background: transparent;\n  }\n}\n\n\n\n  \n\n\n","⟪ 91560 characters skipped ⟫0vh;\n\t\t}\n\t}\n\t.terms {\n\t\tfont-size: $default-font-size;\n\t\ttext-align: center;\n\t\tmargin-top: 23px;\n\t\tmargin-bottom: 0;\n\t\ta {\n\t\t\ttext-decoration: underline;\n\t\t}\n\t}\n}","/* Navbar */\n\n.navbar {\n  font-weight: normal;\n  background: $navbar-bg;\n  left: $sidebar-width-lg;\n  transition:left $action-transition-duration $action-transition-timing-function;\n  -webkit-transition:left $action-transition-duration $action-transition-timing-function;\n  -moz-transition:left $action-transition-duration $action-transition-timing-function;\n  -ms-transition:left $action-transition-duration $action-transition-timing-function;\n  @media (max-width:992px) {\n    left: 0;\n  }\n  .navbar-brand-wrapper {\n    transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n    -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n    -moz-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n    -ms-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n    background: $navbar-bg;\n    width: $sidebar-width-lg;\n    height: $navbar-height;\n    @media (max-width: 991px) {\n      width: 55px;\n    }\n    .navbar-brand {\n      color: lighten(color(gray-dark), 20%);\n      font-size: 1.5rem;\n      line-height: 48px;\n      margin-right: 0;\n      padding: 0rem 0rem 0rem 1.3rem;\n      width: 100%;\n\n      &:active,\n      &:focus,\n      &:hover {\n        color: lighten(color(gray-dark), 10%);\n      }\n\n      img {\n        width: calc(#{$sidebar-width-lg} - 120px );\n        max-width: 100%;\n        height: 28px;\n        margin: auto;\n        vertical-align: middle;\n      }\n      &.brand-logo-mini {\n        display: none;\n        img {\n          width: calc(#{$sidebar-width-icon} - 50px );\n          max-width: 100%;\n          height: 28px;\n          margin: auto;\n        }\n      }\n    }\n  }\n  .navbar-menu-wrapper {\n    transition: width $action-transition-duration $action-transition-timing-function;\n    -webkit-transition: width $action-transition-duration $action-transition-timing-function;\n    -moz-transition: width $action-transition-duration $action-transition-timing-function;\n    -ms-transition: width $action-transition-duration $action-transition-timing-function;\n    box-shadow: $navbar-box-shadow;\n    -webkit-box-shadow: $navbar-box-shadow;\n    -moz-box-shadow: $navbar-box-shadow;  \n    color: $navbar-menu-color;\n    padding-left: 15px;\n    padding-right: 15px;\n    width: 100%;\n    height: $navbar-height;\n    .rtl & {\n      box-shadow: $navbar-box-shadow-rtl;\n    -webkit-box-shadow: $navbar-box-shadow-rtl;\n    -moz-box-shadow: $navbar-box-shadow-rtl;  \n    }\n    @media (max-width: 991px) {\n      width: auto;\n      padding-left: 15px;\n      padding-right: 15px;\n    }\n    .navbar-toggler {\n      border: 0;\n      color: $text-muted;\n      height: $navbar-height;\n      @include border-radius(0px);\n      &:not(.navbar-toggler-right) {\n        font-size: 0.875rem;\n        @media (max-width: 991px) {\n          display: none;\n        }\n      }\n      &.navbar-toggler-right{\n        @media (max-width:991px){\n          padding-left: 15px;\n          padding-right: 11px;\n          border-right: none;\n        }\n      }\n    }\n    .search-field {\n      .input-group {\n        input {\n          font-size: $default-font-size;\n          padding: .5rem;\n          @include input-placeholder {\n            font-size: $navbar-font-size;\n            color: $navbar-menu-color;\n            font-weight: $font-weight-light;\n          }\n        }\n        i {\n          font-size: 17px;\n          margin-right: 0;\n          color: $navbar-menu-color;\n        }\n        .input-group-text {\n          background: transparent;\n        }\n      }\n      .rtl & {\n        @extend .ml-0;\n        @extend .mr-4;\n      }\n    }\n    .count-indicator {\n      position: relative;\n\n      .count-symbol,\n      .count-number {\n        position: absolute;\n        border-radius: 100%;\n        border: 2px solid $navbar-bg;\n      }\n      .count-symbol {\n        top: 17px;\n        right: -3px;\n        width: 10px;\n        height: 10px;\n      }\n      .count-number {\n        min-width: 14px;\n        height: 14px;\n        font-size: .5rem;\n        color: $white;\n        bottom: 16px;\n        right: -5px;\n        line-height: 1;\n        text-align: center;\n      }\n      &:after {\n        display: none;\n      }\n      .count {\n        position: absolute;\n        left: 66%;\n        width: 7px;\n        height: 7px;\n        color: $white;\n        border-radius: 100%;\n        text-align: center;\n        font-size: .625rem;\n        line-height: 1.5;\n        top: 7px;\n      }\n    }\n    .navbar-nav {\n      flex-direction: row;\n      align-items: center;\n      .nav-item {\n        .nav-link {\n          color: inherit;\n          font-size: $navbar-font-size;\n          margin-left: 1rem;\n          margin-right: 1rem;\n          white-space: nowrap;\n          @media (max-width: 767px) {\n            margin-left: .8rem;\n            margin-right: .8rem;\n          }\n          i {\n            font-size: $navbar-icon-font-size;\n          }\n          .navbar-profile {\n            display: flex;\n            font-weight: normal;\n            align-items: center;\n            .navbar-profile-name {\n              white-space: nowrap;\n              margin-left: 1rem;\n            }\n            i {\n              color: #a7afb7;\n            }\n          }\n          &.create-new-button {\n            padding: 0.375rem 0.75rem;\n          }\n        }\n        &.dropdown {\n          line-height: 1rem;\n          .dropdown-toggle {\n            &:after {\n              color: theme-color(primary);\n              font-size: 1rem;\n            }\n          }\n          .dropdown-menu {\n            @extend .dropdownAnimation;\n            border: none;\n            @include border-radius(4px);\n            &.navbar-dropdown {\n              position: absolute;            \n              font-size: 0.9rem;\n              margin-top: 0;\n              top: 48px;\n              right: 0;\n              left: auto;\n              -webkit-box-shadow: 0px 0px 35px -3px rgb(0, 0, 0);\n              -moz-box-shadow: 0px 0px 35px -3px rgb(0, 0, 0);\n              box-shadow: 0px 0px 35px -3px rgb(0, 0, 0);\n              .rtl & {\n                right: auto;\n                left: 0;\n              }\n              padding: 0;\n\n              .dropdown-item {\n                @extend .d-flex;\n                @extend .align-items-center;\n                margin-bottom: 0;\n                padding: 11px 13px;\n                cursor: pointer;\n                &:hover {\n                  color: #fff;\n                }\n                i {\n                  font-size: 17px;\n                }\n                .ellipsis {\n                  max-width: 200px;\n                  overflow: hidden;\n                  text-overflow: ellipsis;\n                }\n                .rtl & {\n                  i{\n                    @extend .mr-0;\n                    margin-left: 10px;\n                  }\n                }\n              }\n              .dropdown-divider {\n                margin: 0;\n              }\n            }\n          }\n          @media (max-width: 991px) {\n            position: static;\n            .navbar-dropdown {\n              left: 20px;\n              right: 20px;\n              top: $navbar-height;\n              width: calc(100% - 40px);\n            }\n          }\n        }\n        &.nav-profile {\n          .nav-link {\n            @extend .d-flex;\n            .nav-profile-img {\n              position: relative;\n              width: 32px;\n              height: 32px;\n              img {\n                width: 32px;\n                height: 32px;\n                border-radius: 100%;\n              }\n              .availability-status {\n                position: absolute;\n                width: 10px;\n                height: 10px;\n                border-radius: 100%;\n                border: 2px solid #ffffff;\n                bottom: 5px;\n                right: -5px;\n                &.online {\n                  background: theme-color(success);\n                }\n                &.offline {\n                  background: theme-color(danger);\n                }\n                &.busy {\n                  background: theme-color(warning);\n        ⟪ 367 characters skipped ⟫e;\n              }\n            }\n            &.dropdown-toggle {\n              &:after {\n                line-height: 2;\n              }\n            }\n          }\n        }\n      }\n      &.navbar-nav-right {\n        @media (min-width: 992px) {\n          margin-left: auto;\n          .rtl & {\n            margin-left: 0;\n            margin-right: auto;\n          }\n        }\n      }\n    }\n    .search {\n      input {\n        background: $card-bg;\n        padding: 13px 20px 11px 20px;\n        border: 1px solid #2c2e33;\n        &::placeholder {\n          color: $text-muted;\n          font-size: $input-placeholder-font-size;\n        }\n      }\n    }\n  }\n}\n@media (max-width:991px) {\n  .navbar {\n    flex-direction: row;\n    .navbar-brand-wrapper {\n      width: 75px;\n      .navbar-brand {\n        &.brand-logo {\n          display: none;\n        }\n        &.brand-logo-mini {\n          display: inline-block;\n        }\n      }\n    }\n  }\n  .navbar-collapse {\n    display: flex;\n    margin-top: 0.5rem;\n  }\n}\n@media (max-width:480px) {\n  .navbar {\n    .navbar-brand-wrapper {\n      width: 55px;\n      .brand-logo-mini{\n        padding-top: 0px;\n      }\n    }\n  }\n}\n\n.sidebar-tinted {\n  .navbar {\n    .navbar-brand-wrapper {\n      background: $navbar-brand-wrapper-tinted-bg;\n    }\n  }\n}","/* Sidebar */\n\n.sidebar {\n  min-height: calc(100vh - #{$navbar-height});\n  background: $sidebar-dark-bg;\n  font-weight: normal;\n  padding: 0;\n  width: $sidebar-width-lg;\n  z-index: 11;\n  transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n  -webkit-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n  -moz-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n  -ms-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n\n  .sidebar-brand-wrapper {\n    transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n    -webkit-tran⟪ 366 characters skipped ⟫duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;\n    background: $sidebar-dark-bg;\n    width: $sidebar-width-lg;\n    height: $navbar-height;\n    @media (max-width: 991px) {\n      width: 55px;\n    }\n    .sidebar-brand {\n      color: lighten(color(gray-dark), 20%);\n      font-size: 1.5rem;\n      line-height: 48px;\n      margin-right: 0;\n      padding: 0rem 0rem 0rem 1.3rem;\n      width: 100%;\n\n      &:active,\n      &:focus,\n      &:hover {\n        color: lighten(color(gray-dark), 10%);\n      }\n\n      img {\n        width: calc(#{$sidebar-width-lg} - 120px );\n        max-width: 100%;\n        height: 28px;\n        margin: auto;\n        vertical-align: middle;\n      }\n      &.brand-logo-mini {\n        display: none;\n        img {\n          width: calc(#{$sidebar-width-icon} - 50px );\n          max-width: 100%;\n          height: 28px;\n          margin: auto;\n        }\n      }\n    }\n  }\n\n  .nav {\n    overflow: hidden;\n    flex-wrap: nowrap;\n    flex-direction: column;\n    margin-bottom: 60px;\n    padding-top: $navbar-height;\n    @media (max-width:992px) {\n      padding-top: 0;\n    }\n\n    .nav-item {\n      @include transition-duration(0.25s);\n      transition-property: background;\n      -webkit-transition-property: background;\n      padding-right: 20px;\n      .collapse {\n        z-index: 999;\n      }\n\n      .nav-link {\n        @include display-flex;\n        @include align-items(center);\n        white-space: nowrap;\n        padding: $sidebar-menu-padding-y 10px $sidebar-menu-padding-y $sidebar-menu-padding-x;\n        color: $sidebar-dark-menu-color;\n        @include transition-duration(0.45s);\n        transition-property: color;\n        -webkit-transition-property: color;\n        height: 46px;\n        border-radius: 0px 100px 100px 0px;\n        \n        i {\n          color: inherit;\n          &.menu-icon {\n            font-size: $sidebar-icon-font-size;\n            line-height: 1;\n            margin-left: auto;\n            .rtl & {\n              margin-left: 0;⟪ 3539 characters skipped ⟫        position: relative;\n              .count-symbol,\n              .count-number {\n                position: absolute;\n                border-radius: 100%;\n                border: 2px solid $navbar-bg;\n              }\n              .count-symbol {\n                top: 17px;\n                right: -3px;\n                width: 10px;\n                height: 10px;\n              }\n              .count-number {\n                min-width: 14px;\n                height: 14px;\n                font-size: .5rem;\n                color: $white;\n                bottom: 16px;\n                right: -5px;\n                line-height: 1;\n                text-align: center;\n              }\n              &:after {\n                display: none;\n              }\n              .count {\n                position: absolute;\n                left: 66%;\n                width: 10px;\n                height: 10px;\n                color: $white;\n                border-radius: 100%;\n                text-align: center;\n                font-size: .625rem;\n                line-height: 1.5;\n                top: 26px;\n                border: 2px solid $border-color;\n            ⟪ 3656 characters skipped ⟫  }\n      }\n    \n      \n    \n    \n  }\n}\n\n/* style for off-canvas menu*/\n@media screen and (max-width: 991px) {\n  .sidebar-offcanvas {\n    position: fixed;\n    max-height: calc(100vh - #{$navbar-height});\n    top: $navbar-height;\n    bottom: 0;\n    overflow: auto;\n    right: -$sidebar-width-lg;\n    -webkit-transition: all 0.25s ease-out;\n    -o-transition: all 0.25s ease-out;\n    transition: all 0.25s ease-out;\n    &.active {\n      right: 0;\n    }\n  }\n}\n\n.sidebar-tinted {\n  .sidebar {\n    background: $sidebar-tinted-bg;\n    .sidebar-brand-wrapper {\n      background: $sidebar-tinted-bg;\n    }\n    .nav {\n      .nav-item {\n        .nav-link {\n          color: $sidebar-tinted-menu-color;\n          .menu-icon {\n            i {\n              color: white;\n            }\n          }\n          i {\n            &.menu-arrow {\n              color: $sidebar-tinted-menu-arrow-color;\n            }\n          }\n        }\n        &.active {\n          > .nav-link {\n            background: $sidebar-tinted-menu-active-bg;\n          }\n          &:before {\n            background: $sidebar-tinted-menu-color; \n          }\n        }\n        &.profile {\n          .profile-desc {\n⟪ 749 characters skipped ⟫dropdown) {\n              >.nav-link {\n                background: $sidebar-tinted-menu-hover-bg;\n              }\n            }\n          }\n        }\n      }\n    }\n  }\n}","/* Layouts */\n\n.navbar {\n  &.fixed-top {\n    + .page-body-wrapper {\n      padding-top: $navbar-height;\n    }\n  }\n}\n\n// Sidebar Icon Only\n.sidebar-icon-only {\n  @media (min-width: 992px) {\n    .navbar {\n      left: $sidebar-width-icon;\n      .navbar-menu-wrapper {\n        width: 100%;\n      }\n    }\n    .sidebar {\n      width: $sidebar-width-icon;\n      .sidebar-brand-wrapper {\n        width: $sidebar-width-icon;\n        .brand-logo {\n          display: none;\n        }\n        .brand-logo-mini {\n          display: inline-block;\n        }\n      }\n      .nav {\n        overflow: visible;\n        .nav-item {\n          position: relative;\n          padding: 0;\n          .profile-name {\n            display: none;\n          }\n          .mdi-dots-vertical {\n            display: none;\n          }\n          &.account-dropdown {\n            display: none;\n          }\n          .nav-link {\n            text-align: center;\n            .menu-title,\n            .badge,.menu-sub-title {\n              display: none;\n            }\n            .menu-title {\n              @include border-radius(0 5px 5px 0px);\n              @at-root #{selector-append(\".rtl\", &)} {\n                @include border-radius(5px⟪ 4787 characters skipped ⟫transition: width $action-transition-duration $action-transition-timing-function, margin $action-transition-duration $action-transition-timing-function;\n  width: 100%;\n  min-height: calc(100vh - #{$navbar-height});\n  padding-top: $navbar-height;\n  @include display-flex();\n  @include flex-direction(column);\n  @media (max-width: 991px) {\n    margin-left: 0;\n    width: 100%;\n  }\n}\n\n.content-wrapper {\n  background: $content-bg;\n  padding: 1.875rem 1.75rem;\n  width: 100%;\n  @include flex-grow(1);\n}"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;qEAqGqE;AAErE,uEAAuE;AACvE,sDAAsD;AAItD,uEAAuE;AACvE,uCAAuC;AAGvC,uEAAuE;AACvE,oCAAoC;AyElE9B,eAAe,CAAf,KAAe;EG7CnB,EAAE;IACA,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,IAAI;IACF,OAAO,EAAE,CAAC;;AHyCR,kBAAkB,CAAlB,KAAkB;EGlDtB,EAAE;IACA,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,IAAI;IACF,OAAO,EAAE,CAAC;;AH8CR,aAAa,CAAb,KAAa;EGvDjB,EAAE;IACA,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,GAAG;IACD,OAAO,EAAE,CAAC;EACZ,
+
+public\admin\assets\js\settings.js:
+  16      //background constants
+  17:     var navbar_classes = "navbar-danger navbar-success navbar-warning navbar-dark navbar-light navbar-primary navbar-info navbar-pink";
+  18      var sidebar_classes = "sidebar-light sidebar-dark";
+
+  34  
+  35:     //Navbar Backgrounds
+  36      $(".tiles.primary").on("click", function() {
+  37:       $(".navbar").removeClass(navbar_classes);
+  38:       $(".navbar").addClass("navbar-primary");
+  39        $(".tiles").removeClass("selected");
+
+  42      $(".tiles.success").on("click", function() {
+  43:       $(".navbar").removeClass(navbar_classes);
+  44:       $(".navbar").addClass("navbar-success");
+  45        $(".tiles").removeClass("selected");
+
+  48      $(".tiles.warning").on("click", function() {
+  49:       $(".navbar").removeClass(navbar_classes);
+  50:       $(".navbar").addClass("navbar-warning");
+  51        $(".tiles").removeClass("selected");
+
+  54      $(".tiles.danger").on("click", function() {
+  55:       $(".navbar").removeClass(navbar_classes);
+  56:       $(".navbar").addClass("navbar-danger");
+  57        $(".tiles").removeClass("selected");
+
+  60      $(".tiles.info").on("click", function() {
+  61:       $(".navbar").removeClass(navbar_classes);
+  62:       $(".navbar").addClass("navbar-info");
+  63        $(".tiles").removeClass("selected");
+
+  66      $(".tiles.dark").on("click", function() {
+  67:       $(".navbar").removeClass(navbar_classes);
+  68:       $(".navbar").addClass("navbar-dark");
+  69        $(".tiles").removeClass("selected");
+
+  72      $(".tiles.default").on("click", function() {
+  73:       $(".navbar").removeClass(navbar_classes);
+  74        $(".tiles").removeClass("selected");
+
+  79      $('[data-toggle="horizontal-menu-toggle"]').on("click", function() {
+  80:       $(".horizontal-menu .bottom-navbar").toggleClass("header-toggled");
+  81      });
+
+public\admin\assets\scss\_layouts.scss:
+   2  
+   3: .navbar {
+   4    &.fixed-top {
+   5      + .page-body-wrapper {
+   6:       padding-top: $navbar-height;
+   7      }
+
+  13    @media (min-width: 992px) {
+  14:     .navbar {
+  15        left: $sidebar-width-icon;
+  16:       .navbar-menu-wrapper {
+  17          width: 100%;
+
+public\admin\assets\scss\_navbar.scss:
+    1: /* Navbar */
+    2  
+    3: .navbar {
+    4    font-weight: normal;
+    5:   background: $navbar-bg;
+    6    left: $sidebar-width-lg;
+
+   13    }
+   14:   .navbar-brand-wrapper {
+   15      transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
+
+   18      -ms-transition: width $action-transition-duration $action-transition-timing-function, background $action-transition-duration $action-transition-timing-function;
+   19:     background: $navbar-bg;
+   20      width: $sidebar-width-lg;
+   21:     height: $navbar-height;
+   22      @media (max-width: 991px) {
+
+   24      }
+   25:     .navbar-brand {
+   26        color: lighten(color(gray-dark), 20%);
+
+   56    }
+   57:   .navbar-menu-wrapper {
+   58      transition: width $action-transition-duration $action-transition-timing-function;
+
+   61      -ms-transition: width $action-transition-duration $action-transition-timing-function;
+   62:     box-shadow: $navbar-box-shadow;
+   63:     -webkit-box-shadow: $navbar-box-shadow;
+   64:     -moz-box-shadow: $navbar-box-shadow;  
+   65:     color: $navbar-menu-color;
+   66      padding-left: 15px;
+
+   68      width: 100%;
+   69:     height: $navbar-height;
+   70      .rtl & {
+   71:       box-shadow: $navbar-box-shadow-rtl;
+   72:     -webkit-box-shadow: $navbar-box-shadow-rtl;
+   73:     -moz-box-shadow: $navbar-box-shadow-rtl;  
+   74      }
+
+   79      }
+   80:     .navbar-toggler {
+   81        border: 0;
+   82        color: $text-muted;
+   83:       height: $navbar-height;
+   84        @include border-radius(0px);
+   85:       &:not(.navbar-toggler-right) {
+   86          font-size: 0.875rem;
+
+   90        }
+   91:       &.navbar-toggler-right{
+   92          @media (max-width:991px){
+
+  104            @include input-placeholder {
+  105:             font-size: $navbar-font-size;
+  106:             color: $navbar-menu-color;
+  107              font-weight: $font-weight-light;
+
+  112            margin-right: 0;
+  113:           color: $navbar-menu-color;
+  114          }
+
+  130          border-radius: 100%;
+  131:         border: 2px solid $navbar-bg;
+  132        }
+
+  164      }
+  165:     .navbar-nav {
+  166        flex-direction: row;
+
+  170            color: inherit;
+  171:           font-size: $navbar-font-size;
+  172            margin-left: 1rem;
+
+  179            i {
+  180:             font-size: $navbar-icon-font-size;
+  181            }
+  182:           .navbar-profile {
+  183              display: flex;
+
+  185              align-items: center;
+  186:             .navbar-profile-name {
+  187                white-space: nowrap;
+
+  209              @include border-radius(4px);
+  210:             &.navbar-dropdown {
+  211                position: absolute;            
+
+  256              position: static;
+  257:             .navbar-dropdown {
+  258                left: 20px;
+  259                right: 20px;
+  260:               top: $navbar-height;
+  261                width: calc(100% - 40px);
+
+  316        }
+  317:       &.navbar-nav-right {
+  318          @media (min-width: 992px) {
+
+  340  @media (max-width:991px) {
+  341:   .navbar {
+  342      flex-direction: row;
+  343:     .navbar-brand-wrapper {
+  344        width: 75px;
+  345:       .navbar-brand {
+  346          &.brand-logo {
+
+  354    }
+  355:   .navbar-collapse {
+  356      display: flex;
+
+  360  @media (max-width:480px) {
+  361:   .navbar {
+  362:     .navbar-brand-wrapper {
+  363        width: 55px;
+
+  371  .sidebar-tinted {
+  372:   .navbar {
+  373:     .navbar-brand-wrapper {
+  374:       background: $navbar-brand-wrapper-tinted-bg;
+  375      }
+
+public\admin\assets\scss\_sidebar.scss:
+    3  .sidebar {
+    4:   min-height: calc(100vh - #{$navbar-height});
+    5    background: $sidebar-dark-bg;
+
+   21      width: $sidebar-width-lg;
+   22:     height: $navbar-height;
+   23      @media (max-width: 991px) {
+
+   63      margin-bottom: 60px;
+   64:     padding-top: $navbar-height;
+   65      @media (max-width:992px) {
+
+  238                  border-radius: 100%;
+  239:                 border: 2px solid $navbar-bg;
+  240                }
+
+  437      position: fixed;
+  438:     max-height: calc(100vh - #{$navbar-height});
+  439:     top: $navbar-height;
+  440      bottom: 0;
+
+public\admin\assets\scss\_variables.scss:
+  115  
+  116: ///////// NAVBAR ////////
+  117: $navbar-bg: #191c24;
+  118: $navbar-brand-wrapper-tinted-bg: #fa424a;
+  119: $navbar-height: 70px;
+  120: $navbar-menu-color: #ffffff;
+  121: $navbar-font-size: .9375rem;
+  122: $navbar-icon-font-size: 1.125rem;
+  123  
+  124: ///////// NAVBAR ////////
+  125  
+
+  172  
+  173: $navbar-box-shadow: 20px 19px 34px -15px rgba(0,0,0,0.5);
+  174: $navbar-box-shadow-rtl: -34px 19px 34px -15px $content-bg;
+  175  
+
+public\admin\assets\scss\style.scss:
+  230  
+  231: @import './navbar';
+  232  @import './sidebar';
+
+public\admin\assets\scss\components\_forms.scss:
+  45  }
+  46: .navbar {
+  47    .form-control {
+
+public\admin\assets\scss\vertical\_vertical-wrapper.scss:
+  27    width: 100%;
+  28:   min-height: calc(100vh - #{$navbar-height});
+  29:   padding-top: $navbar-height;
+  30    @include display-flex();
+
+public\admin\assets\vendors\js\bootstrap.min.js.map:
+  1: ⟪ 4178 characters skipped ⟫DOWN","ARROW_UP_KEYCODE","CLICK","KEYDOWN_DATA_API","KEYUP_DATA_API","AttachmentMap","offset","flip","boundary","reference","display","popperConfig","Dropdown","_popper","_menu","_getMenuElement","_inNavbar","_detectNavbar","disabled","isActive","_clearMenus","usePopper","showEvent","_getParentFromElement","Popper","referenceElement","_getPopperConfig","body","noop","hideEvent","destroy","update","scheduleUpdate","stopPropagation","constructor","_getPlacement","$parentDropdown","placement","_getOffset","offsets","modifiers","enabled","preventOverflow","boundariesElement","applyStyle","toggles","context","clickEvent","dropdownMenu","_dataApiKeydownHandler","items","item","backdrop","HIDE_PREVENTED","FOCUSIN","RESIZE","CLICK_DISMISS","KEYDOWN_DISMISS","MOUSEUP_DISMISS","MOUSEDOWN_DISMISS","Modal","_dialog","_backdrop","_isShown","_isBodyOverflowing","_ignoreBackdropClick","_scrollbarWidth","_checkScrollbar","_setScrollbar","_adjustDialog","_setEscapeEvent","_setResizeEvent","_showBackdrop","_showElement","transition","_hideModal","forEach","htmlElement","handleUpdate","_triggerBackdropTransition","hideEventPrevented","defaultPrevented","modalTransitionDuration","modalBody","Node","ELEMENT_NODE","app⟪ 108182 characters skipped ⟫nu-left',\n  POSITION_STATIC : 'position-static'\n}\n\nconst Selector = {\n  DATA_TOGGLE   : '[data-toggle=\"dropdown\"]',\n  FORM_CHILD    : '.dropdown form',\n  MENU          : '.dropdown-menu',\n  NAVBAR_NAV    : '.navbar-nav',\n  VISIBLE_ITEMS : '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)'\n}\n\nconst AttachmentMap = {\n  TOP       : 'top-start',\n  TOPEND    : 'top-end',\n  BOTTOM    : 'bottom-start',\n  BOTTOMEND : 'bottom-end',\n  RIGHT     : 'right-start',\n  RIGHTEND  : 'right-end',\n  LEFT      : 'left-start',\n  LEFTEND   : 'left-end'\n}\n\nconst Default = {\n  offset       : 0,\n  flip         : true,\n  boundary     : 'scrollParent',\n  reference    : 'toggle',\n  display      : 'dynamic',\n  popperConfig : null\n}\n\nconst DefaultType = {\n  offset       : '(number|string|function)',\n  flip         : 'boolean',\n  boundary     : '(string|element)',\n  reference    : '(string|element)',\n  display      : 'string',\n  popperConfig : '(null|object)'\n}\n\n/**\n * ------------------------------------------------------------------------\n * Class Definition\n * ------------------------------------------------------------------------\n */\n\nclass Dropdown {\n  constructor(element, config) {\n    this._element  = element\n    this._popper   = null\n    this._config   = this._getConfig(config)\n    this._menu     = this._getMenuElement()\n    this._inNavbar = this._detectNavbar()\n\n    this._addEventListeners()\n  }\n\n  // Getters\n\n  static get VERSION() {\n    return VERSION\n  }\n\n  static get Default() {\n    return Default\n  }\n\n  static get DefaultType() {\n    return DefaultType\n  }\n\n  // Public\n\n  toggle() {\n    if (this._element.disabled || $(this._element).hasClass(ClassName.DISABLED)) {\n      return\n    }\n\n    const isActive = $(this._menu).hasClass(ClassName.SHOW)\n\n    Dropdown._clearMenus()\n\n    if (isActive) {\n      return\n    }\n\n    this.show(true)\n  }\n\n  show(usePopper = false) {\n    if (this._element.disabled || $(this._element).hasClass(ClassName.DISABLED) || $(this._menu).hasClass(ClassName.SHOW)) {\n      return\n    }\n\n    const relatedTarget = {\n      relatedTarget: this._element\n    }\n    const showEvent = $.Event(Event.SHOW, relatedTarget)\n    const parent = Dropdown._getParentFromElement(this._element)\n\n    $(parent).trigger(showEvent)\n\n    if (showEvent.isDefaultPrevented()) {\n      return\n    }\n\n    // Disable totally Popper.js for Dropdown in Navbar\n    if (!this._inNavbar && usePopper) {\n      /**\n       * Check for Popper dependency\n       * Popper - https://popper.js.org\n       */\n      if (typeof Popper === 'undefined') {\n        throw new TypeError('Bootstrap\\'s dropdowns require Popper.js (https://popper.js.org/)')\n      }\n\n      let referenceElement = this._element\n\n      if (this._config.reference === 'parent') {\n        referenceElement = parent\n      } else if (Util.isElement(this._config.reference)) {\n        referenceElement = this._config.reference\n\n        // Check if it's jQuery element\n        if (typeof this._config.reference.jquery !== 'undefined') {\n          referenceElement = this._config.reference[0]\n        }\n      }\n\n      // If boundary is not `scrollParent`, then set position to `static`\n      // to allow the menu to \"escape\" the scroll parent's boundaries\n      // https://github.com/twbs/bootstrap/issues/24251\n      if (this._config.boundary !== 'scrollParent') {\n        $(parent).addClass(Cl⟪ 285 characters skipped ⟫broken event delegation on iOS\n    // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html\n    if ('ontouchstart' in document.documentElement &&\n        $(parent).closest(Selector.NAVBAR_NAV).length === 0) {\n      $(document.body).children().on('mouseover', null, $.noop)\n    }\n\n    this._element.focus()\n    this._element.setAttribute('aria-expanded', true)\n\n    $(this._menu).toggleClass(ClassName.SHOW)\n    $(parent)\n      .toggleClass(ClassName.SHOW)\n      .trigger($.Event(Event.SHOWN, relatedTarget))\n  }\n\n  hide() {\n    if (this._element.disabled || $(this._element).hasClass(ClassName.DISABLED) || !$(this._menu).hasClass(ClassName.SHOW)) {\n      return\n    }\n\n    const relatedTarget = {\n      relatedTarget: this._element\n    }\n    const hideEvent = $.Event(Event.HIDE, relatedTarget)\n    const parent = Dropdown._getParentFromElement(this._element)\n\n    $(parent).trigger(hideEvent)\n\n    if (hideEvent.isDefaultPrevented()) {\n      return\n    }\n\n    if (this._popper) {\n      this._popper.destroy()\n    }\n\n    $(this._menu).toggleClass(ClassName.SHOW)\n    $(parent)\n      .toggleClass(ClassName.SHOW)\n      .trigger($.Event(Event.HIDDEN, relatedTarget))\n  }\n\n  dispose() {\n    $.removeData(this._element, DATA_KEY)\n    $(this._element).off(EVENT_KEY)\n    this._element = null\n    this._menu = null\n    if (this._popper !== null) {\n      this._popper.destroy()\n      this._popper = null\n    }\n  }\n\n  update() {\n    this._inNavbar = this._detectNavbar()\n    if (this._popper !== null) {\n      this._popper.scheduleUpdate()\n    }\n  }\n\n  // Private\n\n  _addEventListeners() {\n    $(this._element).on(Event.CLICK, (event) => {\n      event.preventDefault()\n      event.stopPropagation()\n      this.toggle()\n    })\n  }\n\n  _getConfig(config) {\n    config = {\n      ...this.constructor.Default,\n      ...$(this._element).data(),\n      ...config\n    }\n\n    Util.typeCheckConfig(\n      NAME,\n      config,\n      this.constructor.DefaultType\n    )\n\n    return config\n  }\n\n  _getMenuElement() {\n    if (!this._menu) {\n      const parent = Dropdown._getParentFromElement(this._element)\n\n      if (parent) {\n        this._menu = parent.querySelector(Selector.MENU)\n      }\n    }\n    return this._menu\n  }\n\n  _getPlacement() {\n    const $parentDropdown = $(this._element.parentNode)\n    let placement = AttachmentMap.BOTTOM\n\n    // Handle dropup\n    if ($parentDropdown.hasClass(ClassName.DROPUP)) {\n      place⟪ 292 characters skipped ⟫PLEFT)) {\n      placement = AttachmentMap.LEFT\n    } else if ($(this._menu).hasClass(ClassName.MENURIGHT)) {\n      placement = AttachmentMap.BOTTOMEND\n    }\n    return placement\n  }\n\n  _detectNavbar() {\n    return $(this._element).closest('.navbar').length > 0\n  }\n\n  _getOffset() {\n    const offset = {}\n\n    if (typeof this._config.offset === 'function') {\n      offset.fn = (data) => {\n        data.offsets = {\n          ...data.offsets,\n          ...this._config.offset(data.offsets, this._element) || {}\n        }\n\n        return data\n      }\n    } else {\n      offset.offset = this._config.offset\n    }\n\n    return offset\n  }\n\n  _getPopperConfig() {\n    const popperConfig = {\n      placement: this._getPlacement(),\n      modifiers: {\n        offset: this._getOffset(),\n        flip: {\n          enabled: this._config.flip\n        },\n        preventOverflow: {\n          boundariesElement: this._config.boundary\n        }\n      }\n    }\n\n    // Disable Popper.js if we have a static display\n    if (this._config.display === 'static') {\n      popperConfig.modifiers.applyStyle = {\n        enabled: false\n      }\n    }\n\n    return {\n      ...popperConfig,\n      ...this._config.popperConfig\n 
+
+public\admin\assets\vendors\js\vendor.bundle.base.js:
+  14    */
+  15: ⟪ 20339 characters skipped ⟫keyup"+Ot+kt},Ht="disabled",Rt="show",xt="dropup",Ft="dropright",Ut="dropleft",Wt="dropdown-menu-right",qt="position-static",Mt='[data-toggle="dropdown"]',Kt=".dropdown form",Qt=".dropdown-menu",Bt=".navbar-nav",Vt=".dropdown-menu .dropdown-item:not(.disabled):not(:disabled)",Yt="top-start",zt="top-end",Xt="bottom-start",$t="bottom-end",Gt="right-start",Jt="left-start",Zt={offset:0,flip:!0,boundary:"scrollParent",reference:"toggle",display:"dynamic",popperConfig:null},te={offset:"(number|string|function)",flip:"boolean",boundary:"(string|element)",reference:"(string|element)",display:"string",popperConfig:"(null|object)"},ee=function(){function c(t,e){this._element=t,this._popper=null,this._config=this._getConfig(e),this._menu=this._getMenuElement(),this._inNavbar=this._detectNavbar(),this._addEventListeners()}var t=c.prototype;return t.toggle=function(){if(!this._element.disabled&&!g(this._element).hasClass(Ht)){var t=g(this._menu).hasClass(Rt);c._clearMenus(),t||this.show(!0)}},t.show=function(t){if(void 0===t&&(t=!1),!(this._element.disabled||g(this._element).hasClass(Ht)||g(this._menu).hasClass(Rt))){var e={relatedTarget:this._element},n=g.Event(jt.SHOW,e),i=c._getParentFromElement(this._element);if(g(i).trigger(n),!n.isDefaultPrevented()){if(!this._inNavbar&&t){if("undefined"==typeof u)throw new TypeError("Bootstrap's dropdowns require Popper.js (https://popper.js.org/)");var o=this._element;"parent"===this._config.reference?o=i:_.isElement(this._config.reference)&&(o=this._config.reference,"undefined"!=typeof this._config.reference.jquery&&(o=this._config.reference[0])),"scrollParent"!==this._config.boundary&&g(i).addClass(qt),this._popper=new u(o,this._menu,this._getPopperConfig())}"ontouchstart"in document.documentElement&&0===g(i).closest(Bt).length&&g(document.body).children().on("mouseover",null,g.noop),this._element.focus(),this._element.setAttribute("aria-expanded",!0),g(this._menu).toggleClass(Rt),g(i).toggleClass(Rt).trigger(g.Event(jt.SHOWN,e))}}},t.hide=function(){if(!this._element.disabled&&!g(this._element).hasClass(Ht)&&g(this._menu).hasClass(Rt)){var t={relatedTarget:this._element},e=g.Event(jt.HIDE,t),n=c._getParentFromElement(this._element);g(n).trigger(e),e.isDefaultPrevented()||(this._popper&&this._popper.destroy(),g(this._menu).toggleClass(Rt),g(n).toggleClass(Rt).trigger(g.Event(jt.HIDDEN,t)))}},t.dispose=function(){g.removeData(this._element,Nt),g(this._element).off(Ot),this._element=null,(this._menu=null)!==this._popper&&(this._popper.destroy(),this._popper=null)},t.update=function(){this._inNavbar=this._detectNavbar(),null!==this._popper&&this._popper.scheduleUpdate()},t._addEventListeners=function(){var e=this;g(this._element).on(jt.CLICK,function(t){t.preventDefault(),t.stopPropagation(),e.toggle()})},t._getConfig=function(t){return t=l({},this.constructor.Default,{},g(this._element).data(),{},t),_.typeCheckConfig(At,t,this.constructor.DefaultType),t},t._getMenuElement=function(){if(!this._menu){var t=c._getParentFromElement(this._element);t&&(this._menu=t.querySelector(Qt))}return this._menu},t._getPlacement=function(){var t=g(this._element.parentNode),e=Xt;return t.hasClass(xt)?(e=Yt,g(this._menu).hasClass(Wt)&&(e=zt)):t.hasClass(Ft)?e=Gt:t.hasClass(Ut)?e=Jt:g(this._menu).hasClass(Wt)&&(e=$t),e},t._detectNavbar=function(){return 0<g(this._element).closest(".navbar").length},t._getOffset=function(){var e=this,t={};return"function"==typeof this._config.offset?t.fn=function(t){return t.offsets=l({},t.offsets,{},e._config.offset(t.offsets,e._element)||{}),t}:t.offset=this._config.offset,t},t._getPopperConfig=function(){var t={placement:this._getPlacement(),modifiers:{offset:this._getOffset(),flip:{enabled:this._config.flip},preventOverflow:{boundariesElement:this._config.boundary}}};return"static"===this._config.display&&(t.modifiers.applyStyle={enabled:!1}),l({},t,{},this._config.popperConfig)},c._jQueryInterface=function(e){return this.each(function(){var t=g(this).data(Nt);if(t||(t=new c(this,"object"==typeof e?e:null),g(this).data(Nt,t)),"string"==typeof e){if("undefined"==typeof t[e])throw new TypeError('No method named "'+e+'"');t[e]()}})},c._clearMenus=function(t){if(!t||3!==t.which&&("keyup"!==t.type||9===t.which))for(var e=[].slice.call(document.querySelectorAll(Mt)),n=0,i=e.length;n<i;n++){var o=c._getParentFromElement(e[n]),r=g(e[n
+  16  //# sourceMappingURL=bootstrap.min.js.map
+
+public\admin\gulp-tasks\inject.js:
+  12  
+  13: /* inject partials like sidebar and navbar */
+  14  gulp.task('injectPartial', function () {
+
+public\admin\pages\charts\chartjs.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\forms\basic_elements.html:
+  169        <div class="container-fluid page-body-wrapper">
+  170:         <!-- partial:../../partials/_navbar.html -->
+  171:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  172:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  173:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  174            </div>
+  175:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  176:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  177                <span class="mdi mdi-menu"></span>
+  178              </button>
+  179:             <ul class="navbar-nav w-100">
+  180                <li class="nav-item w-100">
+
+  185              </ul>
+  186:             <ul class="navbar-nav navbar-nav-right">
+  187                <li class="nav-item dropdown d-none d-lg-block">
+  188                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  189:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  190                    <h6 class="p-3 mb-0">Projects</h6>
+
+  237                  </a>
+  238:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  239                    <h6 class="p-3 mb-0">Messages</h6>
+
+  278                  </a>
+  279:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  280                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  322                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  323:                   <div class="navbar-profile">
+  324                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  325:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  326                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  328                  </a>
+  329:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  330                    <h6 class="p-3 mb-0">Profile</h6>
+
+  357              </ul>
+  358:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  359                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\icons\mdi.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\samples\blank-page.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\tables\basic-table.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\ui-features\buttons.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\ui-features\dropdowns.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\pages\ui-features\typography.html:
+  167        <div class="container-fluid page-body-wrapper">
+  168:         <!-- partial:../../partials/_navbar.html -->
+  169:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+  170:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+  171:             <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+  172            </div>
+  173:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+  174:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+  175                <span class="mdi mdi-menu"></span>
+  176              </button>
+  177:             <ul class="navbar-nav w-100">
+  178                <li class="nav-item w-100">
+
+  183              </ul>
+  184:             <ul class="navbar-nav navbar-nav-right">
+  185                <li class="nav-item dropdown d-none d-lg-block">
+  186                  <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+  187:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+  188                    <h6 class="p-3 mb-0">Projects</h6>
+
+  235                  </a>
+  236:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+  237                    <h6 class="p-3 mb-0">Messages</h6>
+
+  276                  </a>
+  277:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  278                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  320                  <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  321:                   <div class="navbar-profile">
+  322                      <img class="img-xs rounded-circle" src="../../assets/images/faces/face15.jpg" alt="">
+  323:                     <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  324                      <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  326                  </a>
+  327:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  328                    <h6 class="p-3 mb-0">Profile</h6>
+
+  355              </ul>
+  356:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  357                <span class="mdi mdi-format-line-spacing"></span>
+
+public\admin\partials\_navbar.html:
+    1: <nav class="navbar p-0 fixed-top d-flex flex-row">
+    2:   <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+    3:     <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    4    </div>
+    5:   <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+    6:     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+    7        <span class="mdi mdi-menu"></span>
+    8      </button>
+    9:     <ul class="navbar-nav w-100">
+   10        <li class="nav-item w-100">
+
+   15      </ul>
+   16:     <ul class="navbar-nav navbar-nav-right">
+   17        <li class="nav-item dropdown d-none d-lg-block">
+   18          <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
+   19:         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+   20            <h6 class="p-3 mb-0">Projects</h6>
+
+   67          </a>
+   68:         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+   69            <h6 class="p-3 mb-0">Messages</h6>
+
+  108          </a>
+  109:         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  110            <h6 class="p-3 mb-0">Notifications</h6>
+
+  152          <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+  153:           <div class="navbar-profile">
+  154              <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
+  155:             <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+  156              <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+
+  158          </a>
+  159:         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+  160            <h6 class="p-3 mb-0">Profile</h6>
+
+  187      </ul>
+  188:     <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  189        <span class="mdi mdi-format-line-spacing"></span>
+
+public\assets\css\bootstrap.css:
+   4336  
+   4337: .navbar {
+   4338    position: relative;
+
+   4349  
+   4350: .navbar .container,
+   4351: .navbar .container-fluid, .navbar .container-sm, .navbar .container-md, .navbar .container-lg, .navbar .container-xl {
+   4352    display: -ms-flexbox;
+
+   4361  
+   4362: .navbar-brand {
+   4363    display: inline-block;
+
+   4371  
+   4372: .navbar-brand:hover, .navbar-brand:focus {
+   4373    text-decoration: none;
+
+   4375  
+   4376: .navbar-nav {
+   4377    display: -ms-flexbox;
+
+   4385  
+   4386: .navbar-nav .nav-link {
+   4387    padding-right: 0;
+
+   4390  
+   4391: .navbar-nav .dropdown-menu {
+   4392    position: static;
+
+   4395  
+   4396: .navbar-text {
+   4397    display: inline-block;
+
+   4401  
+   4402: .navbar-collapse {
+   4403    -ms-flex-preferred-size: 100%;
+
+   4410  
+   4411: .navbar-toggler {
+   4412    padding: 0.25rem 0.75rem;
+
+   4419  
+   4420: .navbar-toggler:hover, .navbar-toggler:focus {
+   4421    text-decoration: none;
+
+   4423  
+   4424: .navbar-toggler-icon {
+   4425    display: inline-block;
+
+   4434  @media (max-width: 575.98px) {
+   4435:   .navbar-expand-sm > .container,
+   4436:   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
+   4437      padding-right: 0;
+
+   4442  @media (min-width: 576px) {
+   4443:   .navbar-expand-sm {
+   4444      -ms-flex-flow: row nowrap;
+
+   4448    }
+   4449:   .navbar-expand-sm .navbar-nav {
+   4450      -ms-flex-direction: row;
+
+   4452    }
+   4453:   .navbar-expand-sm .navbar-nav .dropdown-menu {
+   4454      position: absolute;
+   4455    }
+   4456:   .navbar-expand-sm .navbar-nav .nav-link {
+   4457      padding-right: 0.5rem;
+
+   4459    }
+   4460:   .navbar-expand-sm > .container,
+   4461:   .navbar-expand-sm > .container-fluid, .navbar-expand-sm > .container-sm, .navbar-expand-sm > .container-md, .navbar-expand-sm > .container-lg, .navbar-expand-sm > .container-xl {
+   4462      -ms-flex-wrap: nowrap;
+
+   4464    }
+   4465:   .navbar-expand-sm .navbar-collapse {
+   4466      display: -ms-flexbox !important;
+
+   4470    }
+   4471:   .navbar-expand-sm .navbar-toggler {
+   4472      display: none;
+
+   4476  @media (max-width: 767.98px) {
+   4477:   .navbar-expand-md > .container,
+   4478:   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
+   4479      padding-right: 0;
+
+   4484  @media (min-width: 768px) {
+   4485:   .navbar-expand-md {
+   4486      -ms-flex-flow: row nowrap;
+
+   4490    }
+   4491:   .navbar-expand-md .navbar-nav {
+   4492      -ms-flex-direction: row;
+
+   4494    }
+   4495:   .navbar-expand-md .navbar-nav .dropdown-menu {
+   4496      position: absolute;
+   4497    }
+   4498:   .navbar-expand-md .navbar-nav .nav-link {
+   4499      padding-right: 0.5rem;
+
+   4501    }
+   4502:   .navbar-expand-md > .container,
+   4503:   .navbar-expand-md > .container-fluid, .navbar-expand-md > .container-sm, .navbar-expand-md > .container-md, .navbar-expand-md > .container-lg, .navbar-expand-md > .container-xl {
+   4504      -ms-flex-wrap: nowrap;
+
+   4506    }
+   4507:   .navbar-expand-md .navbar-collapse {
+   4508      display: -ms-flexbox !important;
+
+   4512    }
+   4513:   .navbar-expand-md .navbar-toggler {
+   4514      display: none;
+
+   4518  @media (max-width: 991.98px) {
+   4519:   .navbar-expand-lg > .container,
+   4520:   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
+   4521      padding-right: 0;
+
+   4526  @media (min-width: 992px) {
+   4527:   .navbar-expand-lg {
+   4528      -ms-flex-flow: row nowrap;
+
+   4532    }
+   4533:   .navbar-expand-lg .navbar-nav {
+   4534      -ms-flex-direction: row;
+
+   4536    }
+   4537:   .navbar-expand-lg .navbar-nav .dropdown-menu {
+   4538      position: absolute;
+   4539    }
+   4540:   .navbar-expand-lg .navbar-nav .nav-link {
+   4541      padding-right: 0.5rem;
+
+   4543    }
+   4544:   .navbar-expand-lg > .container,
+   4545:   .navbar-expand-lg > .container-fluid, .navbar-expand-lg > .container-sm, .navbar-expand-lg > .container-md, .navbar-expand-lg > .container-lg, .navbar-expand-lg > .container-xl {
+   4546      -ms-flex-wrap: nowrap;
+
+   4548    }
+   4549:   .navbar-expand-lg .navbar-collapse {
+   4550      display: -ms-flexbox !important;
+
+   4554    }
+   4555:   .navbar-expand-lg .navbar-toggler {
+   4556      display: none;
+
+   4560  @media (max-width: 1199.98px) {
+   4561:   .navbar-expand-xl > .container,
+   4562:   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+   4563      padding-right: 0;
+
+   4568  @media (min-width: 1200px) {
+   4569:   .navbar-expand-xl {
+   4570      -ms-flex-flow: row nowrap;
+
+   4574    }
+   4575:   .navbar-expand-xl .navbar-nav {
+   4576      -ms-flex-direction: row;
+
+   4578    }
+   4579:   .navbar-expand-xl .navbar-nav .dropdown-menu {
+   4580      position: absolute;
+   4581    }
+   4582:   .navbar-expand-xl .navbar-nav .nav-link {
+   4583      padding-right: 0.5rem;
+
+   4585    }
+   4586:   .navbar-expand-xl > .container,
+   4587:   .navbar-expand-xl > .container-fluid, .navbar-expand-xl > .container-sm, .navbar-expand-xl > .container-md, .navbar-expand-xl > .container-lg, .navbar-expand-xl > .container-xl {
+   4588      -ms-flex-wrap: nowrap;
+
+   4590    }
+   4591:   .navbar-expand-xl .navbar-collapse {
+   4592      display: -ms-flexbox !important;
+
+   4596    }
+   4597:   .navbar-expand-xl .navbar-toggler {
+   4598      display: none;
+
+   4601  
+   4602: .navbar-expand {
+   4603    -ms-flex-flow: row nowrap;
+
+   4608  
+   4609: .navbar-expand > .container,
+   4610: .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
+   4611    padding-right: 0;
+
+   4614  
+   4615: .navbar-expand .navbar-nav {
+   4616    -ms-flex-direction: row;
+
+   4619  
+   4620: .navbar-expand .navbar-nav .dropdown-menu {
+   4621    position: absolute;
+
+   4623  
+   4624: .navbar-expand .navbar-nav .nav-link {
+   4625    padding-right: 0.5rem;
+
+   4628  
+   4629: .navbar-expand > .container,
+   4630: .navbar-expand > .container-fluid, .navbar-expand > .container-sm, .navbar-expand > .container-md, .navbar-expand > .container-lg, .navbar-expand > .container-xl {
+   4631    -ms-flex-wrap: nowrap;
+
+   4634  
+   4635: .navbar-expand .navbar-collapse {
+   4636    display: -ms-flexbox !important;
+
+   4641  
+   4642: .navbar-expand .navbar-toggler {
+   4643    display: none;
+
+   4645  
+   4646: .navbar-light .navbar-brand {
+   4647    color: rgba(0, 0, 0, 0.9);
+
+   4649  
+   4650: .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+   4651    color: rgba(0, 0, 0, 0.9);
+
+   4653  
+   4654: .navbar-light .navbar-nav .nav-link {
+   4655    color: rgba(0, 0, 0, 0.5);
+
+   4657  
+   4658: .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+   4659    color: rgba(0, 0, 0, 0.7);
+
+   4661  
+   4662: .navbar-light .navbar-nav .nav-link.disabled {
+   4663    color: rgba(0, 0, 0, 0.3);
+
+   4665  
+   4666: .navbar-light .navbar-nav .show > .nav-link,
+   4667: .navbar-light .navbar-nav .active > .nav-link,
+   4668: .navbar-light .navbar-nav .nav-link.show,
+   4669: .navbar-light .navbar-nav .nav-link.active {
+   4670    color: rgba(0, 0, 0, 0.9);
+
+   4672  
+   4673: .navbar-light .navbar-toggler {
+   4674    color: rgba(0, 0, 0, 0.5);
+
+   4677  
+   4678: .navbar-light .navbar-toggler-icon {
+   4679    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+   4681  
+   4682: .navbar-light .navbar-text {
+   4683    color: rgba(0, 0, 0, 0.5);
+
+   4685  
+   4686: .navbar-light .navbar-text a {
+   4687    color: rgba(0, 0, 0, 0.9);
+
+   4689  
+   4690: .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
+   4691    color: rgba(0, 0, 0, 0.9);
+
+   4693  
+   4694: .navbar-dark .navbar-brand {
+   4695    color: #fff;
+
+   4697  
+   4698: .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+   4699    color: #fff;
+
+   4701  
+   4702: .navbar-dark .navbar-nav .nav-link {
+   4703    color: rgba(255, 255, 255, 0.5);
+
+   4705  
+   4706: .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+   4707    color: rgba(255, 255, 255, 0.75);
+
+   4709  
+   4710: .navbar-dark .navbar-nav .nav-link.disabled {
+   4711    color: rgba(255, 255, 255, 0.25);
+
+   4713  
+   4714: .navbar-dark .navbar-nav .show > .nav-link,
+   4715: .navbar-dark .navbar-nav .active > .nav-link,
+   4716: .navbar-dark .navbar-nav .nav-link.show,
+   4717: .navbar-dark .navbar-nav .nav-link.active {
+   4718    color: #fff;
+
+   4720  
+   4721: .navbar-dark .navbar-toggler {
+   4722    color: rgba(255, 255, 255, 0.5);
+
+   4725  
+   4726: .navbar-dark .navbar-toggler-icon {
+   4727    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+   4729  
+   4730: .navbar-dark .navbar-text {
+   4731    color: rgba(255, 255, 255, 0.5);
+
+   4733  
+   4734: .navbar-dark .navbar-text a {
+   4735    color: #fff;
+
+   4737  
+   4738: .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
+   4739    color: #fff;
+
+  10246    }
+  10247:   .navbar {
+  10248      display: none;
+
+public\assets\css\theme.css:
+   900  
+   901: .navbar {
+   902    min-height: 70px;
+
+   904  
+   905: .navbar-brand {
+   906    font-weight: 600;
+
+   910  
+   911: .navbar-nav {
+   912    margin-top: 10px;
+
+   916  
+   917: .navbar-nav .nav-link {
+   918    transition: all .2s ease;
+
+   920  
+   921: .navbar-nav .btn {
+   922    font-size: 14px;
+
+   924  
+   925: .navbar-light .navbar-nav .nav-link {
+   926    color: rgba(110, 128, 122, 0.8);
+
+   928  
+   929: .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+   930    color: #6E807A;
+
+   932  
+   933: .navbar-light .navbar-nav .show > .nav-link,
+   934: .navbar-light .navbar-nav .active > .nav-link,
+   935: .navbar-light .navbar-nav .nav-link.show,
+   936: .navbar-light .navbar-nav .nav-link.active {
+   937    font-weight: 500;
+
+   942  @media (min-width: 576px) {
+   943:   .navbar-expand-sm .navbar-nav {
+   944      margin-top: 0;
+
+   946    }
+   947:   .navbar-expand-sm .navbar-nav .nav-link {
+   948      padding-right: 16px;
+
+   950    }
+   951:   .navbar-expand-sm .navbar-nav {
+   952      align-items: center;
+
+   956  @media (min-width: 768px) {
+   957:   .navbar-expand-md .navbar-nav {
+   958      margin-top: 0;
+
+   960    }
+   961:   .navbar-expand-md .navbar-nav .nav-link {
+   962      padding-right: 16px;
+
+   964    }
+   965:   .navbar-expand-md .navbar-nav {
+   966      align-items: center;
+
+   970  @media (min-width: 992px) {
+   971:   .navbar-expand-lg .navbar-nav {
+   972      margin-top: 0;
+
+   974    }
+   975:   .navbar-expand-lg .navbar-nav .nav-link {
+   976      padding-right: 16px;
+
+   978    }
+   979:   .navbar-expand-lg .navbar-nav {
+   980      align-items: center;
+
+   984  @media (min-width: 1200px) {
+   985:   .navbar-expand-xl .navbar-nav {
+   986      margin-top: 0;
+
+   988    }
+   989:   .navbar-expand-xl .navbar-nav .nav-link {
+   990      padding-right: 16px;
+
+   992    }
+   993:   .navbar-expand-xl .navbar-nav {
+   994      align-items: center;
+
+  1242  
+  1243: .input-navbar {
+  1244    width: auto;
+
+  1247  
+  1248: .input-navbar .input-group-text {
+  1249    background-color: #fff;
+
+  1252  
+  1253: .input-navbar .form-control {
+  1254    height: calc(1.5em + 1rem + 2px);
+
+public\assets\js\bootstrap.bundle.min.js:
+  5    */
+  6: ⟪ 41263 characters skipped ⟫ring|element)",display:"string",popperConfig:"(null|object)"},Ft=function(){function t(t,e){this._element=t,this._popper=null,this._config=this._getConfig(e),this._menu=this._getMenuElement(),this._inNavbar=this._detectNavbar(),this._addEventListeners()}var n=t.prototype;return n.toggle=function(){if(!this._element.disabled&&!e(this._element).hasClass("disabled")){var n=e(this._menu).hasClass("show");t._clearMenus(),n||this.show(!0)}},n.show=function(n){if(void 0===n&&(n=!1),!(this._element.disabled||e(this._element).hasClass("disabled")||e(this._menu).hasClass("show"))){var i={relatedTarget:this._element},o=e.Event("show.bs.dropdown",i),r=t._getParentFromElement(this._element);if(e(r).trigger(o),!o.isDefaultPrevented()){if(!this._inNavbar&&n){if("undefined"==typeof At)throw new TypeError("Bootstrap's dropdowns require Popper.js (https://popper.js.org/)");var s=this._element;"parent"===this._config.reference?s=r:l.isElement(this._config.reference)&&(s=this._config.reference,"undefined"!=typeof this._config.reference.jquery&&(s=this._config.reference[0])),"scrollParent"!==this._config.boundary&&e(r).addClass("position-static"),this._popper=new At(s,this._menu,this._getPopperConfig())}"ontouchstart"in document.documentElement&&0===e(r).closest(".navbar-nav").length&&e(document.body).children().on("mouseover",null,e.noop),this._element.focus(),this._element.setAttribute("aria-expanded",!0),e(this._menu).toggleClass("show"),e(r).toggleClass("show").trigger(e.Event("shown.bs.dropdown",i))}}},n.hide=function(){if(!this._element.disabled&&!e(this._element).hasClass("disabled")&&e(this._menu).hasClass("show")){var n={relatedTarget:this._element},i=e.Event("hide.bs.dropdown",n),o=t._getParentFromElement(this._element);e(o).trigger(i),i.isDefaultPrevented()||(this._popper&&this._popper.destroy(),e(this._menu).toggleClass("show"),e(o).toggleClass("show").trigger(e.Event("hidden.bs.dropdown",n)))}},n.dispose=function(){e.removeData(this._element,"bs.dropdown"),e(this._element).off(".bs.dropdown"),this._element=null,this._menu=null,null!==this._popper&&(this._popper.destroy(),this._popper=null)},n.update=function(){this._inNavbar=this._detectNavbar(),null!==this._popper&&this._popper.scheduleUpdate()},n._addEventListeners=function(){var t=this;e(this._element).on("click.bs.dropdown",(function(e){e.preventDefault(),e.stopPropagation(),t.toggle()}))},n._getConfig=function(t){return t=s(s(s({},this.constructor.Default),e(this._element).data()),t),l.typeCheckConfig(It,t,this.constructor.DefaultType),t},n._getMenuElement=function(){if(!this._menu){var e=t._getParentFromElement(this._element);e&&(this._menu=e.querySelector(".dropdown-menu"))}return this._menu},n._getPlacement=function(){var t=e(this._element.parentNode),n="bottom-start";return t.hasClass("dropup")?n=e(this._menu).hasClass("dropdown-menu-right")?"top-end":"top-start":t.hasClass("dropright")?n="right-start":t.hasClass("dropleft")?n="left-start":e(this._menu).hasClass("dropdown-menu-right")&&(n="bottom-end"),n},n._detectNavbar=function(){return e(this._element).closest(".navbar").length>0},n._getOffset=function(){var t=this,e={};return"function"==typeof this._config.offset?e.fn=function(e){return e.offsets=s(s({},e.offsets),t._config.offset(e.offsets,t._element)||{}),e}:e.offset=this._config.offset,e},n._getPopperConfig=function(){var t={placement:this._getPlacement(),modifiers:{offset:this._getOffset(),flip:{enabled:this._config.flip},preventOverflow:{boundariesElement:this._config.boundary}}};return"static"===this._config.display&&(t.modifiers.applyStyle={enabled:!1}),s(s({},t),this._config.popperConfig)},t._jQueryInterface=function(n){return this.each((function(){var i=e(this).data("bs.dropdown");if(i||(i=new t(this,"object"==typeof n?n:null),e(this).data("bs.dropdown",i)),"string"==typeof n){if("undefined"==typeof i[n])throw new TypeError('No method named "'+n+'"');i[n]()}}))},t._clearMenus=function(n){if(!n||3!==n.which&&("keyup"!==n.type||9===n.which))for(var i=[].slice.call(document.querySelectorAll('[data-toggle="dropdown"]')),o=0,r=i.length;o<
+  7  //# sourceMappingURL=bootstrap.bundle.min.js.map
+
+public\html\about.html:
+  50  
+  51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  52        <div class="container">
+  53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+  54  
+  55          <form action="#">
+  56:           <div class="input-group input-navbar">
+  57              <div class="input-group-prepend">
+
+  63  
+  64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+  65:           <span class="navbar-toggler-icon"></span>
+  66          </button>
+  67  
+  68:         <div class="collapse navbar-collapse" id="navbarSupport">
+  69:           <ul class="navbar-nav ml-auto">
+  70              <li class="nav-item">
+
+  88            </ul>
+  89:         </div> <!-- .navbar-collapse -->
+  90        </div> <!-- .container -->
+
+public\html\blog-details.html:
+  50  
+  51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  52        <div class="container">
+  53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+  54  
+  55          <form action="#">
+  56:           <div class="input-group input-navbar">
+  57              <div class="input-group-prepend">
+
+  63  
+  64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+  65:           <span class="navbar-toggler-icon"></span>
+  66          </button>
+  67  
+  68:         <div class="collapse navbar-collapse" id="navbarSupport">
+  69:           <ul class="navbar-nav ml-auto">
+  70              <li class="nav-item">
+
+  88            </ul>
+  89:         </div> <!-- .navbar-collapse -->
+  90        </div> <!-- .container -->
+
+public\html\blog.html:
+  50  
+  51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  52        <div class="container">
+  53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+  54  
+  55          <form action="#">
+  56:           <div class="input-group input-navbar">
+  57              <div class="input-group-prepend">
+
+  63  
+  64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+  65:           <span class="navbar-toggler-icon"></span>
+  66          </button>
+  67  
+  68:         <div class="collapse navbar-collapse" id="navbarSupport">
+  69:           <ul class="navbar-nav ml-auto">
+  70              <li class="nav-item">
+
+  88            </ul>
+  89:         </div> <!-- .navbar-collapse -->
+  90        </div> <!-- .container -->
+
+public\html\contact.html:
+  50  
+  51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  52        <div class="container">
+  53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+  54  
+  55          <form action="#">
+  56:           <div class="input-group input-navbar">
+  57              <div class="input-group-prepend">
+
+  63  
+  64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+  65:           <span class="navbar-toggler-icon"></span>
+  66          </button>
+  67  
+  68:         <div class="collapse navbar-collapse" id="navbarSupport">
+  69:           <ul class="navbar-nav ml-auto">
+  70              <li class="nav-item">
+
+  88            </ul>
+  89:         </div> <!-- .navbar-collapse -->
+  90        </div> <!-- .container -->
+
+public\html\doctors.html:
+  50  
+  51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  52        <div class="container">
+  53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+  54  
+  55          <form action="#">
+  56:           <div class="input-group input-navbar">
+  57              <div class="input-group-prepend">
+
+  63  
+  64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+  65:           <span class="navbar-toggler-icon"></span>
+  66          </button>
+  67  
+  68:         <div class="collapse navbar-collapse" id="navbarSupport">
+  69:           <ul class="navbar-nav ml-auto">
+  70              <li class="nav-item">
+
+  88            </ul>
+  89:         </div> <!-- .navbar-collapse -->
+  90        </div> <!-- .container -->
+
+public\html\index.html:
+  50  
+  51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  52        <div class="container">
+  53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+  54  
+  55          <form action="#">
+  56:           <div class="input-group input-navbar">
+  57              <div class="input-group-prepend">
+
+  63  
+  64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+  65:           <span class="navbar-toggler-icon"></span>
+  66          </button>
+  67  
+  68:         <div class="collapse navbar-collapse" id="navbarSupport">
+  69:           <ul class="navbar-nav ml-auto">
+  70              <li class="nav-item active">
+
+  88            </ul>
+  89:         </div> <!-- .navbar-collapse -->
+  90        </div> <!-- .container -->
+
+resources\views\admin\add_doctor.blade.php:
+  30        
+  31:       @include('admin.navbar')
+  32  
+
+resources\views\admin\home.blade.php:
+  22        
+  23:       @include('admin.navbar')
+  24  
+
+resources\views\admin\navbar.blade.php:
+    1  <div class="container-fluid page-body-wrapper">
+    2:         <!-- partial:partials/_navbar.html -->
+    3:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+    4:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+    5:             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    6            </div>
+    7:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+    8:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+    9                <span class="mdi mdi-menu"></span>
+   10              </button>
+   11:             <ul class="navbar-nav navbar-nav-right">
+   12                <li class="nav-item dropdown d-none d-lg-block">
+   13:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+   14                    <h6 class="p-3 mb-0">Projects</h6>
+
+   61                  </a>
+   62:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+   63                    <h6 class="p-3 mb-0">Messages</h6>
+
+  102                  </a>
+  103:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  104                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  149              </ul>
+  150:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  151                <span class="mdi mdi-format-line-spacing"></span>
+
+resources\views\admin\show_appointments.blade.php:
+  22        
+  23:       @include('admin.navbar')
+  24  
+
+resources\views\admin\show_doctor.blade.php:
+  20        
+  21:       @include('admin.navbar')
+  22  
+
+resources\views\user\home.blade.php:
+   50  
+   51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+   52        <div class="container">
+   53:         
+   54  
+   55          <form action="#">
+   56:           <div class="input-group input-navbar">
+   57              <div class="input-group-prepend">
+
+   63  
+   64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+   65:           <span class="navbar-toggler-icon"></span>
+   66          </button>
+   67  
+   68:         <div class="collapse navbar-collapse" id="navbarSupport">
+   69:           <ul class="navbar-nav ml-auto">
+   70              <li class="nav-item active">
+
+  113            </ul>
+  114:         </div> <!-- .navbar-collapse -->
+  115        </div> <!-- .container -->
+
+resources\views\user\my_appointments.blade.php:
+   50  
+   51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+   52        <div class="container">
+   53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+   54  
+   55          <form action="#">
+   56:           <div class="input-group input-navbar">
+   57              <div class="input-group-prepend">
+
+   63  
+   64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+   65:           <span class="navbar-toggler-icon"></span>
+   66          </button>
+   67  
+   68:         <div class="collapse navbar-collapse" id="navbarSupport">
+   69:           <ul class="navbar-nav ml-auto">
+   70              <li class="nav-item active">
+
+  113            </ul>
+  114:         </div> <!-- .navbar-collapse -->
+  115        </div> <!-- .container -->
+
+storage\framework\views\0f7a14ed0a136a057dfd260a0acd7b96962be2d3.php:
+  30        
+  31:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  32  
+
+storage\framework\views\5dcc7c657330c21631fcf5f3f2ba2e094b932212.php:
+  30        
+  31:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  32  
+
+storage\framework\views\7e4a6b55dbe6467ed194ade906af93d9ee713a56.php:
+  22        
+  23:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  24  
+
+storage\framework\views\46e003586501c72fe0adbab814f16381652e2b8b.php:
+   50  
+   51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+   52        <div class="container">
+   53:         <a class="navbar-brand" href="#"><span class="text-primary">Big</span>-Helth</a>
+   54  
+   55          <form action="#">
+   56:           <div class="input-group input-navbar">
+   57              <div class="input-group-prepend">
+
+   63  
+   64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+   65:           <span class="navbar-toggler-icon"></span>
+   66          </button>
+   67  
+   68:         <div class="collapse navbar-collapse" id="navbarSupport">
+   69:           <ul class="navbar-nav ml-auto">
+   70              <li class="nav-item active">
+
+  123            </ul>
+  124:         </div> <!-- .navbar-collapse -->
+  125        </div> <!-- .container -->
+
+storage\framework\views\6638ddfa0c27ec9397f2c2ae5630af9dde2c4ec5.php:
+  22        
+  23:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  24  
+
+storage\framework\views\225012a47a0061f2559858e5e78c4cb56d7ca012.php:
+    1  <div class="container-fluid page-body-wrapper">
+    2:         <!-- partial:partials/_navbar.html -->
+    3:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+    4:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+    5:             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    6            </div>
+    7:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+    8:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+    9                <span class="mdi mdi-menu"></span>
+   10              </button>
+   11:             <ul class="navbar-nav navbar-nav-right">
+   12                <li class="nav-item dropdown d-none d-lg-block">
+   13:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+   14                    <h6 class="p-3 mb-0">Projects</h6>
+
+   61                  </a>
+   62:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+   63                    <h6 class="p-3 mb-0">Messages</h6>
+
+  102                  </a>
+  103:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  104                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  159              </ul>
+  160:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  161                <span class="mdi mdi-format-line-spacing"></span>
+
+  163            </div>
+  164:         </nav><?php /**PATH C:\xampp\htdocs\CMS\ClinicManagementSystem\resources\views/admin/navbar.blade.php ENDPATH**/ ?>
+
+storage\framework\views\244102d0f35ec305eaeb890ef27ece83fe133f19.php:
+    1  <div class="container-fluid page-body-wrapper">
+    2:         <!-- partial:partials/_navbar.html -->
+    3:         <nav class="navbar p-0 fixed-top d-flex flex-row">
+    4:           <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+    5:             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+    6            </div>
+    7:           <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+    8:             <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+    9                <span class="mdi mdi-menu"></span>
+   10              </button>
+   11:             <ul class="navbar-nav navbar-nav-right">
+   12                <li class="nav-item dropdown d-none d-lg-block">
+   13:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
+   14                    <h6 class="p-3 mb-0">Projects</h6>
+
+   61                  </a>
+   62:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+   63                    <h6 class="p-3 mb-0">Messages</h6>
+
+  102                  </a>
+  103:                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+  104                    <h6 class="p-3 mb-0">Notifications</h6>
+
+  159              </ul>
+  160:             <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+  161                <span class="mdi mdi-format-line-spacing"></span>
+
+  163            </div>
+  164:         </nav><?php /**PATH C:\Users\Lukasz\Desktop\Nowy folder\ClinicManagementSystem\resources\views/admin/navbar.blade.php ENDPATH**/ ?>
+
+storage\framework\views\aa72e80d8cc1d2d73084ae033dc3526965fd89de.php:
+   50  
+   51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+   52        <div class="container">
+   53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+   54  
+   55          <form action="#">
+   56:           <div class="input-group input-navbar">
+   57              <div class="input-group-prepend">
+
+   63  
+   64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+   65:           <span class="navbar-toggler-icon"></span>
+   66          </button>
+   67  
+   68:         <div class="collapse navbar-collapse" id="navbarSupport">
+   69:           <ul class="navbar-nav ml-auto">
+   70              <li class="nav-item active">
+
+  123            </ul>
+  124:         </div> <!-- .navbar-collapse -->
+  125        </div> <!-- .container -->
+
+storage\framework\views\ae0a4f62a7af19dfe9684a47a3b3396d33b71240.php:
+  22        
+  23:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  24  
+
+storage\framework\views\b87b51669857ab077f4ec90df1aea46c6106e44d.php:
+  20        
+  21:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  22  
+
+storage\framework\views\be5132b6cafd1b0d08022e8f4dfaa6eb25347320.php:
+   50  
+   51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+   52        <div class="container">
+   53:         <a class="navbar-brand" href="#"><span class="text-primary">One</span>-Health</a>
+   54  
+   55          <form action="#">
+   56:           <div class="input-group input-navbar">
+   57              <div class="input-group-prepend">
+
+   63  
+   64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+   65:           <span class="navbar-toggler-icon"></span>
+   66          </button>
+   67  
+   68:         <div class="collapse navbar-collapse" id="navbarSupport">
+   69:           <ul class="navbar-nav ml-auto">
+   70              <li class="nav-item active">
+
+  123            </ul>
+  124:         </div> <!-- .navbar-collapse -->
+  125        </div> <!-- .container -->
+
+storage\framework\views\dc7009b566f115cf57dc07477beece194aa3bbc9.php:
+   50  
+   51:     <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+   52        <div class="container">
+   53:         <a class="navbar-brand" href="#"><span class="text-primary">Big</span>-Helth</a>
+   54  
+   55          <form action="#">
+   56:           <div class="input-group input-navbar">
+   57              <div class="input-group-prepend">
+
+   63  
+   64:         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupport" aria-controls="navbarSupport" aria-expanded="false" aria-label="Toggle navigation">
+   65:           <span class="navbar-toggler-icon"></span>
+   66          </button>
+   67  
+   68:         <div class="collapse navbar-collapse" id="navbarSupport">
+   69:           <ul class="navbar-nav ml-auto">
+   70              <li class="nav-item active">
+
+  123            </ul>
+  124:         </div> <!-- .navbar-collapse -->
+  125        </div> <!-- .container -->
+
+storage\framework\views\e48bd5eb0744cb0beac4594179d1a72e27beb30c.php:
+  20        
+  21:       <?php echo $__env->make('admin.navbar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+  22  
+
+storage\logs\laravel.log:
+  5669  #23 C:\\Users\\Lukasz\\Desktop\\Nowy folder\\ClinicManagementSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Concerns\\ManagesComponents.php(100): Illuminate\\View\\View->render()
+  5670: #24 C:\\Users\\Lukasz\\Desktop\\Nowy folder\\ClinicManagementSystem\
+esources\\views/admin/navbar.blade.php(152): Illuminate\\View\\Factory->renderComponent()
+  5671  #25 C:\\Users\\Lukasz\\Desktop\\Nowy folder\\ClinicManagementSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\Users\\\\Lukasz...')
+
+  5946  #23 C:\\Users\\Lukasz\\Desktop\\Nowy folder\\ClinicManagementSystem\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Concerns\\ManagesComponents.php(100): Illuminate\\View\\View->render()
+  5947: #24 C:\\Users\\Lukasz\\Desktop\\Nowy folder\\ClinicManagementSystem\
+esources\\views/admin/navbar.blade.php(152): Illuminate\\View\\Factory->renderComponent()
+  5948  #25 C:\\Users\\Lukasz\\Desktop\\Nowy folder\\ClinicManagementSystem\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\Users\\\\Lukasz...')
+
+vendor\laravel\framework\src\Illuminate\Auth\Console\stubs\make\views\layouts\app.stub:
+  23      <div id="app">
+  24:         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+  25              <div class="container">
+  26:                 <a class="navbar-brand" href="{{ url('/') }}">
+  27                      {{ config('app.name', 'Laravel') }}
+  28                  </a>
+  29:                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+  30:                     <span class="navbar-toggler-icon"></span>
+  31                  </button>
+  32  
+  33:                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  34:                     <!-- Left Side Of Navbar -->
+  35:                     <ul class="navbar-nav mr-auto">
+  36  
+
+  38  
+  39:                     <!-- Right Side Of Navbar -->
+  40:                     <ul class="navbar-nav ml-auto">
+  41                          <!-- Authentication Links -->
+
+  52                              <li class="nav-item dropdown">
+  53:                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+  54                                      {{ Auth::user()->name }} <span class="caret"></span>
+
+  56  
+  57:                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+  58                                      <a class="dropdown-item" href="{{ route('logout') }}"
+
+vendor\phpunit\php-code-coverage\src\Report\Html\Renderer\Template\css\bootstrap.min.css:
+  5   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+  6: ⟪ 71698 characters skipped ⟫-align:center}.nav-justified .nav-item{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;text-align:center}.tab-content>.tab-pane{display:none}.tab-content>.active{display:block}.navbar{position:relative;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between;padding:.5rem 1rem}.navbar .container,.navbar .container-fluid,.navbar .container-lg,.navbar .container-md,.navbar .container-sm,.navbar .container-xl{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}.navbar-brand{display:inline-block;padding-top:.3125rem;padding-bottom:.3125rem;margin-right:1rem;font-size:1.25rem;line-height:inherit;white-space:nowrap}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}.navbar-nav{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;padding-left:0;margin-bottom:0;list-style:none}.navbar-nav .nav-link{padding-right:0;padding-left:0}.navbar-nav .dropdown-menu{position:static;float:none}.navbar-text{display:inline-block;padding-top:.5rem;padding-bottom:.5rem}.navbar-collapse{-ms-flex-preferred-size:100%;flex-basis:100%;-ms-flex-positive:1;flex-grow:1;-ms-flex-align:center;align-items:center}.navbar-toggler{padding:.25rem .75rem;font-size:1.25rem;line-height:1;background-color:transparent;border:1px solid transparent;border-radius:.25rem}.navbar-toggler:focus,.navbar-toggler:hover{text-decoration:none}.navbar-toggler-icon{display:inline-block;width:1.5em;height:1.5em;vertical-align:middle;content:"";background:no-repeat center center;background-size:100% 100%}@media (max-width:575.98px){.navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid,.navbar-expand-sm>.container-lg,.navbar-expand-sm>.container-md,.navbar-expand-sm>.container-sm,.navbar-expand-sm>.container-xl{padding-right:0;padding-left:0}}@media (min-width:576px){.navbar-expand-sm{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-sm .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-sm .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-sm .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid,.navbar-expand-sm>.container-lg,.navbar-expand-sm>.container-md,.navbar-expand-sm>.container-sm,.navbar-expand-sm>.container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-sm .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-sm .navbar-toggler{display:none}}@media (max-width:767.98px){.navbar-expand-md>.container,.navbar-expand-md>.container-fluid,.navbar-expand-md>.container-lg,.navbar-expand-md>.container-md,.navbar-expand-md>.container-sm,.navbar-expand-md>.container-xl{padding-right:0;padding-left:0}}@media (min-width:768px){.navbar-expand-md{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-md .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-md .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-md .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-md>.container,.navbar-expand-md>.container-fluid,.navbar-expand-md>.container-lg,.navbar-expand-md>.container-md,.navbar-expand-md>.container-sm,.navbar-expand-md>.container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-md .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-md .navbar-toggler{display:none}}@media (max-width:991.98px){.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid,.navbar-expand-lg>.container-lg,.navbar-expand-lg>.container-md,.navbar-expand-lg>.container-sm,.navbar-expand-lg>.container-xl{padding-right:0;padding-left:0}}@media (min-width:992px){.navbar-expand-lg{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-lg .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-lg .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-lg .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-lg>.container,.navbar-expand-lg>.container-fluid,.navbar-expand-lg>.container-lg,.navbar-expand-lg>.container-md,.navbar-expand-lg>.container-sm,.navbar-expand-lg>.container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-lg .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-lg .navbar-toggler{display:none}}@media (max-width:1199.98px){.navbar-expand-xl>.container,.navbar-expand-xl>.container-fluid,.navbar-expand-xl>.container-lg,.navbar-expand-xl>.container-md,.navbar-expand-xl>.container-sm,.navbar-expand-xl>.container-xl{padding-right:0;padding-left:0}}@media (min-width:1200px){.navbar-expand-xl{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand-xl .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand-xl .navbar-nav .dropdown-menu{position:absolute}.navbar-expand-xl .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand-xl>.container,.navbar-expand-xl>.container-fluid,.navbar-expand-xl>.container-lg,.navbar-expand-xl>.container-md,.navbar-expand-xl>.container-sm,.navbar-expand-xl>.container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand-xl .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand-xl .navbar-toggler{display:none}}.navbar-expand{-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:start;justify-content:flex-start}.navbar-expand>.container,.navbar-expand>.container-fluid,.navbar-expand>.container-lg,.navbar-expand>.container-md,.navbar-expand>.container-sm,.navbar-expand>.container-xl{padding-right:0;padding-left:0}.navbar-expand .navbar-nav{-ms-flex-direction:row;flex-direction:row}.navbar-expand .navbar-nav .dropdown-menu{position:absolute}.navbar-expand .navbar-nav .nav-link{padding-right:.5rem;padding-left:.5rem}.navbar-expand>.container,.navbar-expand>.container-fluid,.navbar-expand>.container-lg,.navbar-expand>.container-md,.navbar-expand>.container-sm,.navbar-expand>.container-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}.navbar-expand .navbar-collapse{display:-ms-flexbox!important;display:flex!important;-ms-flex-preferred-size:auto;flex-basis:auto}.navbar-expand .navbar-toggler{display:none}.navbar-light .navbar-brand{color:rgba(0,0,0,.9)}.navbar-light .navbar-brand:focus,.navbar-light .navbar-brand:hover{color:rgba(0,0,0,.9)}.navbar-light .navbar-nav .nav-link{color:rgba(0,0,0,.5)}.navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover{color:rgba(0,0,0,.7)}.navbar-light .navbar-nav .nav-link.disabled{color:rgba(0,0,0,.3)}.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{color:rgba(0,0,0,.9)}.navbar-light .navbar-toggler{color:rgba(0,0,0,.5);border-color:rgba(0,0,0,.1)}.navbar-light .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-light .navbar-text{color:rgba(0,0,0,.5)}.navbar-light .navbar-text a{color:rgba(0,0,0,.9)}.navbar-light .navbar-text a:focus,.navbar-light .navbar-text a:hover{color:rgba(0,0,0,.9)}.navbar-dark .navbar-brand{color:#fff}.navbar-dark .navbar-brand:focus,.navbar-dark .navbar-brand:hover{color:#fff}.navbar-dark .navbar-nav .nav-link{color:rgba(255,255,255,.5)}.navbar-dark .navbar-nav .nav-link:focus,.navbar-dark .navbar-nav .nav-link:hover{color:rgba(255,255,255,.75)}.navbar-dark .navbar-nav .nav-link.disabled{color:rgba(255,255,255,.25)}.navbar-dark .navbar-nav .active>.nav-link,.navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link.show,.navbar-dark .navbar-nav .show>.nav-link{color:#fff}.navbar-dark .navbar-toggler{color:rgba(255,255,255,.5);border-color:rgba(255,255,255,.1)}.navbar-dark .navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}.navbar-dark .navbar-text{color:rgba(255,255,255,.5)}.navbar-dark .navbar-text a{color:#fff}.navbar-dark .navbar-text a:focus,.navbar-dark .navbar-text a:hover{color:#fff}.card{position:relative;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:1px solid rgba(0,0,0,.125);border-radius:.25rem}.card>hr{margin-right:0;margin-left:0}.card>.list-group{border-top:inherit;border-bottom:inherit}.card>.list-group:first-child{border-top-width:0;border-top-left-radius:calc(.25rem - 1px);border-top-right-radius:calc(.25rem - 1px)}.card>.list-group:last-child{border-bottom-width:0;border-bottom-right-radius:calc(.25rem - 1px);border-bottom-left-radius:calc(.25rem - 1px)}.card-body{-ms-flex:1 1 auto;flex:1 1 auto;min-height:1px;padding:1.25rem}.card-title{margin-bottom:.75rem}.card-subtitle{margin-top:-.375rem;margin-bottom:0}.card-text:last-child{margin-bottom:0}.card-link:hover{text-decoration:none}.card-link+.card-link{margin-left:1.25rem}.card-header{padding:.75rem 1.25rem;margin-bottom:0;background-color:rgba(0,0,⟪ 77935 characters skipped ⟫ad{display:table-header-group}img,tr{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}@page{size:a3}body{min-width:992px!important}.container{min-width:992px!important}.navbar{display:none}.badge{border:1px solid #000}.table{border-collapse:collapse!important}.table td,.table th{background-color:#fff!important}.table-bordered td,.table-bordered th{border:1px solid #dee2e6!important}.table-dark{color:inherit}.table-dark tbody+tbody,.table-dark td,.table-dark th,.table-dark thead th{border-color:#dee2e6}.table .thead-dark th{color:inherit;border-color:#dee2e6}}
+  7  /*# sourceMappingURL=bootstrap.min.css.map */
+
+vendor\phpunit\php-code-coverage\src\Report\Html\Renderer\Template\js\bootstrap.min.js:
+  5    */
+  6: ⟪ 20447 characters skipped ⟫tring|element)",display:"string",popperConfig:"(null|object)"},j=function(){function t(t,e){this._element=t,this._popper=null,this._config=this._getConfig(e),this._menu=this._getMenuElement(),this._inNavbar=this._detectNavbar(),this._addEventListeners()}var i=t.prototype;return i.toggle=function(){if(!this._element.disabled&&!e(this._element).hasClass("disabled")){var n=e(this._menu).hasClass("show");t._clearMenus(),n||this.show(!0)}},i.show=function(i){if(void 0===i&&(i=!1),!(this._element.disabled||e(this._element).hasClass("disabled")||e(this._menu).hasClass("show"))){var o={relatedTarget:this._element},s=e.Event("show.bs.dropdown",o),r=t._getParentFromElement(this._element);if(e(r).trigger(s),!s.isDefaultPrevented()){if(!this._inNavbar&&i){if("undefined"==typeof n)throw new TypeError("Bootstrap's dropdowns require Popper.js (https://popper.js.org/)");var a=this._element;"parent"===this._config.reference?a=r:c.isElement(this._config.reference)&&(a=this._config.reference,"undefined"!=typeof this._config.reference.jquery&&(a=this._config.reference[0])),"scrollParent"!==this._config.boundary&&e(r).addClass("position-static"),this._popper=new n(a,this._menu,this._getPopperConfig())}"ontouchstart"in document.documentElement&&0===e(r).closest(".navbar-nav").length&&e(document.body).children().on("mouseover",null,e.noop),this._element.focus(),this._element.setAttribute("aria-expanded",!0),e(this._menu).toggleClass("show"),e(r).toggleClass("show").trigger(e.Event("shown.bs.dropdown",o))}}},i.hide=function(){if(!this._element.disabled&&!e(this._element).hasClass("disabled")&&e(this._menu).hasClass("show")){var n={relatedTarget:this._element},i=e.Event("hide.bs.dropdown",n),o=t._getParentFromElement(this._element);e(o).trigger(i),i.isDefaultPrevented()||(this._popper&&this._popper.destroy(),e(this._menu).toggleClass("show"),e(o).toggleClass("show").trigger(e.Event("hidden.bs.dropdown",n)))}},i.dispose=function(){e.removeData(this._element,"bs.dropdown"),e(this._element).off(".bs.dropdown"),this._element=null,this._menu=null,null!==this._popper&&(this._popper.destroy(),this._popper=null)},i.update=function(){this._inNavbar=this._detectNavbar(),null!==this._popper&&this._popper.scheduleUpdate()},i._addEventListeners=function(){var t=this;e(this._element).on("click.bs.dropdown",(function(e){e.preventDefault(),e.stopPropagation(),t.toggle()}))},i._getConfig=function(t){return t=a(a(a({},this.constructor.Default),e(this._element).data()),t),c.typeCheckConfig(k,t,this.constructor.DefaultType),t},i._getMenuElement=function(){if(!this._menu){var e=t._getParentFromElement(this._element);e&&(this._menu=e.querySelector(".dropdown-menu"))}return this._menu},i._getPlacement=function(){var t=e(this._element.parentNode),n="bottom-start";return t.hasClass("dropup")?n=e(this._menu).hasClass("dropdown-menu-right")?"top-end":"top-start":t.hasClass("dropright")?n="right-start":t.hasClass("dropleft")?n="left-start":e(this._menu).hasClass("dropdown-menu-right")&&(n="bottom-end"),n},i._detectNavbar=function(){return e(this._element).closest(".navbar").length>0},i._getOffset=function(){var t=this,e={};return"function"==typeof this._config.offset?e.fn=function(e){return e.offsets=a(a({},e.offsets),t._config.offset(e.offsets,t._element)||{}),e}:e.offset=this._config.offset,e},i._getPopperConfig=function(){var t={placement:this._getPlacement(),modifiers:{offset:this._getOffset(),flip:{enabled:this._config.flip},preventOverflow:{boundariesElement:this._config.boundary}}};return"static"===this._config.display&&(t.modifiers.applyStyle={enabled:!1}),a(a({},t),this._config.popperConfig)},t._jQueryInterface=function(n){return this.each((function(){var i=e(this).data("bs.dropdown");if(i||(i=new t(this,"object"==typeof n?n:null),e(this).data("bs.dropdown",i)),"string"==typeof n){if("undefined"==typeof i[n])throw new TypeError('No method named "'+n+'"');i[n]()}}))},t._clearMenus=function(n){if(!n||3!==n.which&&("keyup"!==n.type||9===n.which))for(var i=[].slice.call(document.querySelectorAll('[data-toggle="dropdown"]')),o=0,s=i.length;o<
+  7  //# sourceMappingURL=bootstrap.min.js.map
